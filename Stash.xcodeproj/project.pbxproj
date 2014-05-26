@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A4551B1933A8E6001B7173 /* iPhone568.storyboard */; };
 		D788E72A1933A5AB002D59B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E7291933A5AB002D59B5 /* Foundation.framework */; };
 		D788E72C1933A5AB002D59B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */; };
 		D788E72E1933A5AB002D59B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72D1933A5AB002D59B5 /* UIKit.framework */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48A4551B1933A8E6001B7173 /* iPhone568.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone568.storyboard; sourceTree = "<group>"; };
 		D788E7261933A5AB002D59B5 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D788E7291933A5AB002D59B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +111,7 @@
 			children = (
 				D788E7381933A5AB002D59B5 /* SHAppDelegate.h */,
 				D788E7391933A5AB002D59B5 /* SHAppDelegate.m */,
+				48A4551B1933A8E6001B7173 /* iPhone568.storyboard */,
 				D788E73B1933A5AB002D59B5 /* Images.xcassets */,
 				D788E7301933A5AB002D59B5 /* Supporting Files */,
 			);
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */,
 				D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */,
 				D788E73C1933A5AB002D59B5 /* Images.xcassets in Resources */,
 			);
@@ -361,6 +365,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
 				INFOPLIST_FILE = "Stash/Stash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,6 +379,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
 				INFOPLIST_FILE = "Stash/Stash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +444,7 @@
 				D788E7541933A5AB002D59B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "StashTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				D788E7571933A5AB002D59B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
