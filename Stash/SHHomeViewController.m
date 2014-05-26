@@ -19,7 +19,21 @@
 {
     [super viewDidLoad];
     
-    [[SHStashAPI sharedAPI]POSTRequestForStashWithTitle:@"New Note" text:@"New text." completion:^(NSError *error) {
+//    [[SHStashAPI sharedAPI]POSTRequestForStashWithTitle:@"New Note 2" text:@"New text." completion:^(NSError *error) {
+//        if (!error) {
+//            NSLog(@"Success...");
+//        }
+//    }];
+//    
+//    [[SHStashAPI sharedAPI]GETRequestForStash:@"RazpK3rQ1f" completion:^(NSError *error) {
+//        if (!error) {
+//            NSLog(@"Got one...");
+//        }
+//    }];
+    
+    
+    
+    [[SHStashAPI sharedAPI]DELETERequestForStashWithID:@"uSx03AzINr" completion:^(NSError *error) {
         if (!error) {
             NSLog(@"Success...");
         }
