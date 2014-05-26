@@ -10,11 +10,17 @@
 
 @implementation SHStash (Manage)
 
++ (void)save
+{
+    [[NSManagedObjectContext defaultContext]save:nil];
+    [[NSManagedObjectContext rootSavingContext]save:nil];
+}
+
 + (void)stashWithTitle:(NSString *)title text:(NSString *)text origin:(BOOL)isMine completion:(SHStashCompletionHandler)completionHandler
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"title == %@", title];
     NSArray *results = [SHStash findAllWithPredicate:predicate];
-    if (results.count == 0) {
+    if ([results count] == 0) {
         [MagicalRecord saveUsingCurrentThreadContextWithBlock:^(NSManagedObjectContext *localContext) {
             SHStash *stash = [SHStash createInContext:localContext];
             stash.title = title;
@@ -31,7 +37,7 @@
             }
         }];
     }
-    else if (results.count > 0) {
+    else if ([results count] > 0) {
         NSError *duplicateError = [NSError errorWithDomain:@"DUPLICATE TITLE" code:1001 userInfo:nil];
         completionHandler(duplicateError);
         return;

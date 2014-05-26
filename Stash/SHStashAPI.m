@@ -7,6 +7,7 @@
 //
 
 #import "SHStashAPI.h"
+#import "SHStash+Manage.h"
 
 @interface SHStashAPI ()
 
@@ -65,9 +66,18 @@
     [[self.session dataTaskWithURL:[NSURL URLWithString:stashURLString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (!error) {
             
-            // NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            
-            // Save to Core Data + as soon as it is persisted (completion)... Make a network call to delete the idea.
+            NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            [SHStash stashWithTitle:stash[@"title"] text:stash[@"text"] origin:NO completion:^(NSError *error) {
+                             if (!error) {
+                                 [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[@"objectId"] completion:^(NSError *error) {
+                                     if (!error) {
+                                         completionHandler(nil);
+                                     }
+                                 }];
+                             } else {
+                                 completionHandler(error);
+                             }
+                         }];
             
             completionHandler(nil);
         } else {

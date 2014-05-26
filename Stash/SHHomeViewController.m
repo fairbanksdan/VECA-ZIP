@@ -48,7 +48,13 @@
 
 - (IBAction)read:(id)sender
 {
-    //
+    [[SHStashAPI sharedAPI]GETRequestForStash:@"sKI1Y9dQrT" completion:^(NSError *error) {
+        
+        if (!error) {
+            NSLog(@"Retrieved from Parse and saved to Core Data.");
+        }
+        
+    }];
 }
 
 @end

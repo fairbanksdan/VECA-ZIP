@@ -19,6 +19,10 @@ typedef void(^SHStashCompletionHandler)(NSError *error);
 
 @interface SHStash (Manage)
 
+// This method triggers both default & root saving context save.
+// Call this method on SHStash when "save" button is tapped.
++ (void)save;
+
 // Method for creating stash with title, text and origin.
 + (void)stashWithTitle:(NSString *)title text:(NSString *)text origin:(BOOL)isMine completion:(SHStashCompletionHandler)completionHandler;
 
