@@ -8,10 +8,15 @@
 
 #import "SHAppDelegate.h"
 
+#import "SHStashAPI.h"
+
 @implementation SHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[SHStashAPI sharedAPI]GETRequestForStash:@"" completion:^(NSError *error) {
+        //
+    }];
     return YES;
 }
 
