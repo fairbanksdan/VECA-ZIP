@@ -21,8 +21,10 @@
 {
     self = [super init];
     if (self) {
+        
         NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
         sessionConfiguration.HTTPAdditionalHeaders = @{kApplicationIDKey : kApplicationID, kRESTAPIKey : kRESTAPI};
+        
         _session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
     }
     return self;
@@ -44,7 +46,7 @@
 
 - (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text completion:(StashAPICompletionHandler)completionHandler
 {
-    NSDictionary *parameters = @{@"title" : title, @"text" : text};
+    NSDictionary *parameters = @{kStashTitleKey : title, kStashTextKey : text};
     NSData *parametersData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     NSMutableURLRequest *request = [self requestForHTTPMethod:@"POST" withURL:[NSURL URLWithString:kStashAPIURL]];
     
@@ -67,9 +69,9 @@
         if (!error) {
             
             NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            [SHStash stashWithTitle:stash[@"title"] text:stash[@"text"] origin:NO completion:^(NSError *error) {
+            [SHStash stashWithTitle:stash[kStashTitleKey] text:stash[kStashTextKey] origin:NO completion:^(NSError *error) {
                              if (!error) {
-                                 [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[@"objectId"] completion:^(NSError *error) {
+                                 [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[kStashObjectId] completion:^(NSError *error) {
                                      if (!error) {
                                          completionHandler(nil);
                                      }

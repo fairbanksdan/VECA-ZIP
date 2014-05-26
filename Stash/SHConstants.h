@@ -8,6 +8,11 @@
 
 @import Foundation;
 
+static NSString * const kStashTitleKey = @"title";
+static NSString * const kStashTextKey = @"text";
+static NSString * const kStashOriginKey = @"isMine";
+static NSString * const kStashObjectId = @"objectId";
+
 static NSString * const kApplicationID = @"1Dn8UFej0pHivPQNQ4qooKFuFYCZ3lQXrp4cXSiH";
 static NSString * const kRESTAPI = @"jg4nfT5flFUjO82XPkbb2geckCXQHADrNpjFo5qw";
 
