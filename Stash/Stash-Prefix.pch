@@ -5,7 +5,6 @@
 //
 
 #import <Availability.h>
-#import "SHConstants.h"
 
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."
@@ -15,4 +14,8 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
   #import "SHConstants.h"
+
+#define MR_SHORTHAND
+  #import "CoreData+MagicalRecord.h"
+
 #endif

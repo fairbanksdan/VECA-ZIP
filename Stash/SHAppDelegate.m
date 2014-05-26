@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    return YES;
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Stash"]; return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
