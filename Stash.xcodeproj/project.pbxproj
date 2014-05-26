@@ -286,12 +286,19 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		485E6635193409EB009985FB /* SHConstants */ = {
+			isa = PBXGroup;
+			children = (
+				48D15F711933BB280010B633 /* SHConstants.h */,
+			);
+			name = SHConstants;
+			sourceTree = "<group>";
+		};
 		48A455201933A9F3001B7173 /* StashAPI */ = {
 			isa = PBXGroup;
 			children = (
 				48A4551D1933A9F0001B7173 /* SHStashAPI.h */,
 				48A4551E1933A9F0001B7173 /* SHStashAPI.m */,
-				48D15F711933BB280010B633 /* SHConstants.h */,
 			);
 			name = StashAPI;
 			sourceTree = "<group>";
@@ -329,6 +336,7 @@
 		D788E72F1933A5AB002D59B5 /* Stash */ = {
 			isa = PBXGroup;
 			children = (
+				485E6635193409EB009985FB /* SHConstants */,
 				D788E7381933A5AB002D59B5 /* SHAppDelegate.h */,
 				D788E7391933A5AB002D59B5 /* SHAppDelegate.m */,
 				48D15F6E1933B17E0010B633 /* SHHomeViewController.h */,
