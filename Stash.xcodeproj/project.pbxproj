@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D788E72A1933A5AB002D59B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E7291933A5AB002D59B5 /* Foundation.framework */; };
+		D788E72C1933A5AB002D59B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */; };
+		D788E72E1933A5AB002D59B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72D1933A5AB002D59B5 /* UIKit.framework */; };
+		D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D788E7321933A5AB002D59B5 /* InfoPlist.strings */; };
+		D788E7361933A5AB002D59B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E7351933A5AB002D59B5 /* main.m */; };
+		D788E73A1933A5AB002D59B5 /* SHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E7391933A5AB002D59B5 /* SHAppDelegate.m */; };
+		D788E73C1933A5AB002D59B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D788E73B1933A5AB002D59B5 /* Images.xcassets */; };
+		D788E7431933A5AB002D59B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E7421933A5AB002D59B5 /* XCTest.framework */; };
+		D788E7441933A5AB002D59B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E7291933A5AB002D59B5 /* Foundation.framework */; };
+		D788E7451933A5AB002D59B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72D1933A5AB002D59B5 /* UIKit.framework */; };
+		D788E74D1933A5AB002D59B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D788E74B1933A5AB002D59B5 /* InfoPlist.strings */; };
+		D788E74F1933A5AB002D59B5 /* StashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E74E1933A5AB002D59B5 /* StashTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D788E7461933A5AB002D59B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D788E71E1933A5AB002D59B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D788E7251933A5AB002D59B5;
+			remoteInfo = Stash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D788E7261933A5AB002D59B5 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788E7291933A5AB002D59B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D788E72D1933A5AB002D59B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D788E7311933A5AB002D59B5 /* Stash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stash-Info.plist"; sourceTree = "<group>"; };
+		D788E7331933A5AB002D59B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D788E7351933A5AB002D59B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D788E7371933A5AB002D59B5 /* Stash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stash-Prefix.pch"; sourceTree = "<group>"; };
+		D788E7381933A5AB002D59B5 /* SHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHAppDelegate.h; sourceTree = "<group>"; };
+		D788E7391933A5AB002D59B5 /* SHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHAppDelegate.m; sourceTree = "<group>"; };
+		D788E73B1933A5AB002D59B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D788E7411933A5AB002D59B5 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788E7421933A5AB002D59B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D788E74A1933A5AB002D59B5 /* StashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StashTests-Info.plist"; sourceTree = "<group>"; };
+		D788E74C1933A5AB002D59B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D788E74E1933A5AB002D59B5 /* StashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StashTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D788E7231933A5AB002D59B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788E72C1933A5AB002D59B5 /* CoreGraphics.framework in Frameworks */,
+				D788E72E1933A5AB002D59B5 /* UIKit.framework in Frameworks */,
+				D788E72A1933A5AB002D59B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788E73E1933A5AB002D59B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788E7431933A5AB002D59B5 /* XCTest.framework in Frameworks */,
+				D788E7451933A5AB002D59B5 /* UIKit.framework in Frameworks */,
+				D788E7441933A5AB002D59B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D788E71D1933A5AB002D59B5 = {
+			isa = PBXGroup;
+			children = (
+				D788E72F1933A5AB002D59B5 /* Stash */,
+				D788E7481933A5AB002D59B5 /* StashTests */,
+				D788E7281933A5AB002D59B5 /* Frameworks */,
+				D788E7271933A5AB002D59B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D788E7271933A5AB002D59B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D788E7261933A5AB002D59B5 /* Stash.app */,
+				D788E7411933A5AB002D59B5 /* StashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D788E7281933A5AB002D59B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D788E7291933A5AB002D59B5 /* Foundation.framework */,
+				D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */,
+				D788E72D1933A5AB002D59B5 /* UIKit.framework */,
+				D788E7421933A5AB002D59B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D788E72F1933A5AB002D59B5 /* Stash */ = {
+			isa = PBXGroup;
+			children = (
+				D788E7381933A5AB002D59B5 /* SHAppDelegate.h */,
+				D788E7391933A5AB002D59B5 /* SHAppDelegate.m */,
+				D788E73B1933A5AB002D59B5 /* Images.xcassets */,
+				D788E7301933A5AB002D59B5 /* Supporting Files */,
+			);
+			path = Stash;
+			sourceTree = "<group>";
+		};
+		D788E7301933A5AB002D59B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D788E7311933A5AB002D59B5 /* Stash-Info.plist */,
+				D788E7321933A5AB002D59B5 /* InfoPlist.strings */,
+				D788E7351933A5AB002D59B5 /* main.m */,
+				D788E7371933A5AB002D59B5 /* Stash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D788E7481933A5AB002D59B5 /* StashTests */ = {
+			isa = PBXGroup;
+			children = (
+				D788E74E1933A5AB002D59B5 /* StashTests.m */,
+				D788E7491933A5AB002D59B5 /* Supporting Files */,
+			);
+			path = StashTests;
+			sourceTree = "<group>";
+		};
+		D788E7491933A5AB002D59B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D788E74A1933A5AB002D59B5 /* StashTests-Info.plist */,
+				D788E74B1933A5AB002D59B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D788E7251933A5AB002D59B5 /* Stash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D788E7521933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "Stash" */;
+			buildPhases = (
+				D788E7221933A5AB002D59B5 /* Sources */,
+				D788E7231933A5AB002D59B5 /* Frameworks */,
+				D788E7241933A5AB002D59B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stash;
+			productName = Stash;
+			productReference = D788E7261933A5AB002D59B5 /* Stash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D788E7401933A5AB002D59B5 /* StashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "StashTests" */;
+			buildPhases = (
+				D788E73D1933A5AB002D59B5 /* Sources */,
+				D788E73E1933A5AB002D59B5 /* Frameworks */,
+				D788E73F1933A5AB002D59B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D788E7471933A5AB002D59B5 /* PBXTargetDependency */,
+			);
+			name = StashTests;
+			productName = StashTests;
+			productReference = D788E7411933A5AB002D59B5 /* StashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D788E71E1933A5AB002D59B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = stash;
+				TargetAttributes = {
+					D788E7401933A5AB002D59B5 = {
+						TestTargetID = D788E7251933A5AB002D59B5;
+					};
+				};
+			};
+			buildConfigurationList = D788E7211933A5AB002D59B5 /* Build configuration list for PBXProject "Stash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D788E71D1933A5AB002D59B5;
+			productRefGroup = D788E7271933A5AB002D59B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D788E7251933A5AB002D59B5 /* Stash */,
+				D788E7401933A5AB002D59B5 /* StashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D788E7241933A5AB002D59B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */,
+				D788E73C1933A5AB002D59B5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788E73F1933A5AB002D59B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788E74D1933A5AB002D59B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D788E7221933A5AB002D59B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788E7361933A5AB002D59B5 /* main.m in Sources */,
+				D788E73A1933A5AB002D59B5 /* SHAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788E73D1933A5AB002D59B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788E74F1933A5AB002D59B5 /* StashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D788E7471933A5AB002D59B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D788E7251933A5AB002D59B5 /* Stash */;
+			targetProxy = D788E7461933A5AB002D59B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D788E7321933A5AB002D59B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D788E7331933A5AB002D59B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D788E74B1933A5AB002D59B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D788E74C1933A5AB002D59B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D788E7501933A5AB002D59B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D788E7511933A5AB002D59B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D788E7531933A5AB002D59B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
+				INFOPLIST_FILE = "Stash/Stash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D788E7541933A5AB002D59B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
+				INFOPLIST_FILE = "Stash/Stash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D788E7561933A5AB002D59B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stash.app/Stash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StashTests/StashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D788E7571933A5AB002D59B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stash.app/Stash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
+				INFOPLIST_FILE = "StashTests/StashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D788E7211933A5AB002D59B5 /* Build configuration list for PBXProject "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788E7501933A5AB002D59B5 /* Debug */,
+				D788E7511933A5AB002D59B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D788E7521933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788E7531933A5AB002D59B5 /* Debug */,
+				D788E7541933A5AB002D59B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "StashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788E7561933A5AB002D59B5 /* Debug */,
+				D788E7571933A5AB002D59B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D788E71E1933A5AB002D59B5 /* Project object */;
+}
