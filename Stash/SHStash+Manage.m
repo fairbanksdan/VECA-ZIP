@@ -38,8 +38,7 @@
         }];
     }
     else if ([results count] > 0) {
-        NSError *duplicateError = [NSError errorWithDomain:@"DUPLICATE TITLE" code:1001 userInfo:nil];
-        completionHandler(duplicateError);
+        completionHandler([NSError errorWithDomain:@"ERROR: Duplicate Idea Title" code:1001 userInfo:nil]);
         return;
     }
 }
@@ -60,7 +59,7 @@
 
 + (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text comletion:(SHStashCompletionHandler)completionHandler
 {
-    NSLog(@"not implemented bro");
+    NSLog(@"Not yet implemented.");
 }
 
 @end

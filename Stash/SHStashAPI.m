@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
-        sessionConfiguration.HTTPAdditionalHeaders = @{@"X-Parse-Application-Id": kApplicationID, @"X-Parse-REST-API-Key" : kRESTAPIKey};
+        sessionConfiguration.HTTPAdditionalHeaders = @{kApplicationIDKey : kApplicationID, kRESTAPIKey : kRESTAPI};
         _session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
     }
     return self;
