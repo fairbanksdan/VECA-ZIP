@@ -8,6 +8,7 @@
 
 #import "SHHomeViewController.h"
 #import "SHStashAPI.h"
+#import "SHStash+Manage.h"
 
 @interface SHHomeViewController ()
 
@@ -19,30 +20,30 @@
 {
     [super viewDidLoad];
     
-//    [[SHStashAPI sharedAPI]POSTRequestForStashWithTitle:@"New Note 2" text:@"New text." completion:^(NSError *error) {
-//        if (!error) {
-//            NSLog(@"Success...");
-//        }
-//    }];
-//    
-//    [[SHStashAPI sharedAPI]GETRequestForStash:@"RazpK3rQ1f" completion:^(NSError *error) {
-//        if (!error) {
-//            NSLog(@"Got one...");
-//        }
-//    }];
-    
-    
-    
-    [[SHStashAPI sharedAPI]DELETERequestForStashWithID:@"uSx03AzINr" completion:^(NSError *error) {
-        if (!error) {
-            NSLog(@"Success...");
-        }
-    }];
+//
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+- (IBAction)create:(id)sender {
+  [SHStash stashWithTitle:@"App Name" text:@"This app is awesome" origin:YES completion:^(NSError *error) {
+    if (!error) {
+      NSLog(@"Success!!");
+    }
+  }];
+}
+- (IBAction)delete:(id)sender {
+  NSArray *results = [SHStash findAll];
+  for (SHStash *stash in results) {
+//    NSLog(@"%@",stash.title);
+    [SHStash deleteStash:stash completion:^(NSError *error) {
+      NSLog(@"Deleted Stash");
+    }];
+  }
+}
+- (IBAction)read:(id)sender {
 }
 
 @end
