@@ -8,10 +8,6 @@
 
 #import "SHStashAPI.h"
 
-static NSString * const kApplicationID = @"5oK2qPw5vlbibl7wPWT75Fi2qgcUyotNn9fMI2Q6";
-static NSString * const kRESTAPIKey = @"KCSSKiRP1QP3uaRf9BY332XQSwjIe672yCDPUTeB";
-static NSString * const kStashAPIURL = @"https://api.parse.com/1/classes/Stash";
-
 @interface SHStashAPI ()
 
 @property (strong, nonatomic) NSURLSession *session;

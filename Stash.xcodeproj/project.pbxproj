@@ -56,6 +56,7 @@
 		D788E74A1933A5AB002D59B5 /* StashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StashTests-Info.plist"; sourceTree = "<group>"; };
 		D788E74C1933A5AB002D59B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D788E74E1933A5AB002D59B5 /* StashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StashTests.m; sourceTree = "<group>"; };
+		D788E7581933B581002D59B5 /* SHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 			children = (
 				48A4551D1933A9F0001B7173 /* SHStashAPI.h */,
 				48A4551E1933A9F0001B7173 /* SHStashAPI.m */,
+				D788E7581933B581002D59B5 /* SHConstants.h */,
 			);
 			name = StashAPI;
 			sourceTree = "<group>";
