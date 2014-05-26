@@ -14,5 +14,8 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
   #import "SHConstants.h"
+
+#define MR_SHORTHAND
   #import "CoreData+MagicalRecord.h"
+
 #endif
