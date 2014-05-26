@@ -39,22 +39,22 @@
     return sharedAPI;
 }
 
+#pragma mark - API Calls
+
 - (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text completion:(StashAPICompletionHandler)completionHandler
 {
     NSDictionary *parameters = @{@"title" : title, @"text" : text};
     NSData *parametersData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+    NSMutableURLRequest *request = [self requestForHTTPMethod:@"POST" withURL:[NSURL URLWithString:kStashAPIURL]];
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:kStashAPIURL]];
-    
-    [request setHTTPMethod:@"POST"];
     [request setHTTPBody:parametersData];
-    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    
     [[self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
-        completionHandler(nil);
-        
+        if (!error) {
+            completionHandler(nil);
+        } else {
+            completionHandler(error);
+        }
     }]resume];
 }
 
@@ -63,17 +63,45 @@
     NSString *stashURLString = [NSString  stringWithFormat:@"%@/%@", kStashAPIURL, stash];
 
     [[self.session dataTaskWithURL:[NSURL URLWithString:stashURLString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        
-        // NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-        
-        // Save to Core Data + as soon as it is persisted (completion)... Make a network call to delete the idea.
-        
+        if (!error) {
+            
+            // NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            
+            // Save to Core Data + as soon as it is persisted (completion)... Make a network call to delete the idea.
+            
+            completionHandler(nil);
+        } else {
+            completionHandler(error);
+        }
     }]resume];
 }
 
-- (void)DELETERequestForStashWithID:(NSString *)stashID completion:(StashAPICompletionHandler)completionHandler
+- (void)DELETERequestForStashWithID:(NSString *)stash completion:(StashAPICompletionHandler)completionHandler
 {
-    //
+    NSString *stashURLString = [NSString  stringWithFormat:@"%@/%@", kStashAPIURL, stash];
+    NSMutableURLRequest *request = [self requestForHTTPMethod:@"DELETE" withURL:[NSURL URLWithString:stashURLString]];
+    
+    [[self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        if (!error) {
+            completionHandler(nil);
+        } else {
+            completionHandler(error);
+        }
+    }]resume];
+}
+
+#pragma mark - Helper Methods
+
+- (NSMutableURLRequest *)requestForHTTPMethod:(NSString *)method withURL:(NSURL *)url
+{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    [request setHTTPMethod:method];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    return request;
 }
 
 @end
