@@ -10,7 +10,7 @@
 
 @implementation SHStash (Manage)
 
-- (void)save
+- (void)saveStash
 {
     [[NSManagedObjectContext defaultContext]save:nil];
     [[NSManagedObjectContext rootSavingContext]save:nil];
