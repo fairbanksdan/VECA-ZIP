@@ -179,17 +179,17 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="My app will save the world..." translatesAutoresizingMaskIntoConstraints="NO" id="3h7-JQ-LHw">
                                 <rect key="frame" x="40" y="264" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiM-nQ-hix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1509" y="98"/>
+            <point key="canvasLocation" x="1581" y="-264"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="PbU-1w-D5h">
@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fre-k5-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-599"/>
+            <point key="canvasLocation" x="194" y="-1197"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="c2x-Qc-mXq">
@@ -281,8 +281,21 @@
                                             <segue destination="lSc-LA-Tjd" kind="embed" id="IJi-iG-zgI"/>
                                         </connections>
                                     </containerView>
+                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-04-oul" userLabel="#4">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="Xjj-0t-7Tx"/>
+                                            <constraint firstAttribute="height" constant="568" id="y3F-ny-Fc5"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="qxL-Y0-EJX" kind="embed" id="OLC-3v-lUY"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="1vA-04-oul" firstAttribute="leading" secondItem="0m7-q2-gOD" secondAttribute="trailing" id="25e-89-Mdi"/>
                                     <constraint firstItem="9fO-gD-vJV" firstAttribute="top" secondItem="Ref-Nm-yRX" secondAttribute="top" id="5gk-VC-1fS"/>
                                     <constraint firstItem="9fO-gD-vJV" firstAttribute="leading" secondItem="soH-fE-0rm" secondAttribute="trailing" id="AbA-5F-7aK"/>
                                     <constraint firstAttribute="bottom" secondItem="0m7-q2-gOD" secondAttribute="bottom" id="Bb9-XI-d8Z"/>
@@ -292,7 +305,9 @@
                                     <constraint firstAttribute="bottom" secondItem="soH-fE-0rm" secondAttribute="bottom" id="XJd-yg-Yfy"/>
                                     <constraint firstItem="soH-fE-0rm" firstAttribute="top" secondItem="Ref-Nm-yRX" secondAttribute="top" id="aeZ-UQ-vjl"/>
                                     <constraint firstAttribute="bottom" secondItem="9fO-gD-vJV" secondAttribute="bottom" id="cnu-cs-uzE"/>
-                                    <constraint firstAttribute="trailing" secondItem="0m7-q2-gOD" secondAttribute="trailing" id="iKA-4j-qjO"/>
+                                    <constraint firstItem="1vA-04-oul" firstAttribute="top" secondItem="Ref-Nm-yRX" secondAttribute="top" id="czP-LO-cBm"/>
+                                    <constraint firstAttribute="trailing" secondItem="1vA-04-oul" secondAttribute="trailing" id="gk6-TH-nvg"/>
+                                    <constraint firstAttribute="bottom" secondItem="1vA-04-oul" secondAttribute="bottom" id="ipq-gC-pBl"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="BEc-cv-C5X" id="58R-sQ-Bkg"/>
