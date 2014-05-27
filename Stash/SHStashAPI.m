@@ -63,25 +63,24 @@
 
 - (void)GETRequestForStash:(NSString *)stash completion:(StashAPICompletionHandler)completionHandler
 {
-    NSString *stashURLString = [NSString  stringWithFormat:@"%@/%@", kStashAPIURL, stash];
-
-    [[self.session dataTaskWithURL:[NSURL URLWithString:stashURLString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSString *encodedString = [[NSString stringWithFormat:@"where={\"uuid\":\"%@\"}", stash]stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+    NSMutableURLRequest *request = [self requestForHTTPMethod:@"GET" withURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", kStashAPIURL, encodedString]]];
+    
+    [[self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (!error) {
-            
-            NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSDictionary *stash = [JSON[@"results"]firstObject];
             [SHStash stashWithTitle:stash[kStashTitleKey] text:stash[kStashTextKey] origin:NO completion:^(NSError *error) {
-                             if (!error) {
-                                 completionHandler(nil);
-                                 [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[kStashObjectId] completion:^(NSError *error) {
-                                     if (!error) {
-                                         completionHandler(nil);
-                                     }
-                                 }];
-                             } else {
-                                 completionHandler(error);
-                             }
-                         }];
-            
+                if (!error) {
+                    [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[kStashObjectId] completion:^(NSError *error) {
+                        if (!error) {
+                            completionHandler(nil);
+                        }
+                    }];
+                } else {
+                    completionHandler(error);
+                }
+            }];
             completionHandler(nil);
         } else {
             completionHandler(error);

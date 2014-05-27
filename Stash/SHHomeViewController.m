@@ -19,6 +19,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[SHStashAPI sharedAPI]GETRequestForStash:@"88546dfe3ee0" completion:^(NSError *error) {
+        if (!error) {
+            NSLog(@"Done.");
+        } else {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
