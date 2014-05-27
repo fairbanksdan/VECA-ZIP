@@ -59,20 +59,15 @@
 
 + (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text category:(NSString *)category comletion:(SHStashCompletionHandler)completionHandler
 {
-    if (title) {
-        stash.title = title;
-    }
-    
-    if (text) {
-        stash.text = text;
-    }
-    
-    if (category) {
-        stash.category = category;
-    }
+    if (title) { stash.title = title; }
+    if (text) { stash.text = text; }
+    if (category) { stash.category = category; }
     
     // Persisting Data.
     [stash saveStash];
+    
+    // Notifying of completion.
+    completionHandler(nil);
 }
 
 @end
