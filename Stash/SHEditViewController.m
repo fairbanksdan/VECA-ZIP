@@ -30,10 +30,11 @@
 
 - (NSArray *)activityItems
 {
-    NSString *title = @"New Title";
-    NSString *text = @"This is a very cool idea. I love it!";
+    NSString *text = @"Need your opinion on something. Check out my idea on stash.";
+    NSString *stashAppLink = @"bit.ly/1hvvtAG";
+    NSString *stashLink = @"";
     
-    return @[title, text];
+    return @[text];
 }
 
 - (NSArray *)applicationActivities
@@ -45,6 +46,15 @@
 {
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc]initWithActivityItems:[self activityItems]
                                                                                         applicationActivities:[self applicationActivities]];
+    
+    activityViewController.excludedActivityTypes = @[UIActivityTypePrint,
+                                                     UIActivityTypeCopyToPasteboard,
+                                                     UIActivityTypeAssignToContact,
+                                                     UIActivityTypeSaveToCameraRoll,
+                                                     UIActivityTypeAddToReadingList,
+                                                     UIActivityTypePostToFlickr,
+                                                     UIActivityTypePostToVimeo];
+    
     [self presentViewController:activityViewController animated:YES completion:nil];
 }
 
