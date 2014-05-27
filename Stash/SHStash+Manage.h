@@ -30,6 +30,6 @@ typedef void(^SHStashCompletionHandler)(NSError *error);
 + (void)deleteStash:(SHStash *)stash completion:(SHStashCompletionHandler)completionHandler;
 
 // Method for stash editing with new titlt and text.
-+ (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text comletion:(SHStashCompletionHandler)completionHandler;
++ (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text category:(NSString *)category comletion:(SHStashCompletionHandler)completionHandler;
 
 @end

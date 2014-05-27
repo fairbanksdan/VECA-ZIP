@@ -57,9 +57,22 @@
     }];
 }
 
-+ (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text comletion:(SHStashCompletionHandler)completionHandler
++ (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text category:(NSString *)category comletion:(SHStashCompletionHandler)completionHandler
 {
-    NSLog(@"Not yet implemented.");
+    if (title) {
+        stash.title = title;
+    }
+    
+    if (text) {
+        stash.text = text;
+    }
+    
+    if (category) {
+        stash.category = category;
+    }
+    
+    // Persisting Data.
+    [stash saveStash];
 }
 
 @end
