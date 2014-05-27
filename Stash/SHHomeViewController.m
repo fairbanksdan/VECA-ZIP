@@ -11,6 +11,7 @@
 #import "SHStash+Manage.h"
 
 @interface SHHomeViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
