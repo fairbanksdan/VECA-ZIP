@@ -44,9 +44,9 @@
 
 #pragma mark - API Calls
 
-- (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text completion:(StashAPICompletionHandler)completionHandler
+- (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text uuid:(NSString *)uuid completion:(StashAPICompletionHandler)completionHandler
 {
-    NSDictionary *parameters = @{kStashTitleKey : title, kStashTextKey : text};
+    NSDictionary *parameters = @{kStashTitleKey : title, kStashTextKey : text, @"uuid" : uuid};
     NSData *parametersData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     NSMutableURLRequest *request = [self requestForHTTPMethod:@"POST" withURL:[NSURL URLWithString:kStashAPIURL]];
     
@@ -71,6 +71,7 @@
             NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
             [SHStash stashWithTitle:stash[kStashTitleKey] text:stash[kStashTextKey] origin:NO completion:^(NSError *error) {
                              if (!error) {
+                                 completionHandler(nil);
                                  [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[kStashObjectId] completion:^(NSError *error) {
                                      if (!error) {
                                          completionHandler(nil);

@@ -7,12 +7,25 @@
 //
 
 #import "SHAppDelegate.h"
+#import "SHStashAPI.h"
 
 @implementation SHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Stash"]; return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    [[SHStashAPI sharedAPI]GETRequestForStash:[[url.absoluteString componentsSeparatedByString:@"="]lastObject]
+                                   completion:^(NSError *error) {
+        if (!error) {
+            NSLog(@"Stash retrieved. Saved to CoreData. Deleted from the server.");
+        }
+    }];
+    
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

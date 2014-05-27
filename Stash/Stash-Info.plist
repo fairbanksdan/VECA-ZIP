@@ -37,7 +37,7 @@
 			<string>io.potter.Stash</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>StashApp</string>
+				<string>Stash</string>
 			</array>
 		</dict>
 	</array>
