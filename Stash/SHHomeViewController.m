@@ -31,7 +31,7 @@
 //            NSLog(@"Got one...");
 //        }
 //    }];
-    _label.texta
+
     
     
     [[SHStashAPI sharedAPI]DELETERequestForStashWithID:@"uSx03AzINr" completion:^(NSError *error) {
