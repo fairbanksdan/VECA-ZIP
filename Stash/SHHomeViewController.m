@@ -10,6 +10,7 @@
 #import "SHStashAPI.h"
 
 @interface SHHomeViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -30,7 +31,7 @@
 //            NSLog(@"Got one...");
 //        }
 //    }];
-    
+    _label.texta
     
     
     [[SHStashAPI sharedAPI]DELETERequestForStashWithID:@"uSx03AzINr" completion:^(NSError *error) {
