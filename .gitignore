@@ -17,10 +17,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-Stash/SHStashAPI.h
-*.DS_Store
-
-
+.DS_Store
 
 # CocoaPods
 #

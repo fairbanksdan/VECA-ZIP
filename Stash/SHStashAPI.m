@@ -7,6 +7,7 @@
 //
 
 #import "SHStashAPI.h"
+#import "SHStash+Manage.h"
 
 @interface SHStashAPI ()
 
@@ -20,8 +21,10 @@
 {
     self = [super init];
     if (self) {
+        
         NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
-        sessionConfiguration.HTTPAdditionalHeaders = @{@"X-Parse-Application-Id": kApplicationID, @"X-Parse-REST-API-Key" : kRESTAPIKey};
+        sessionConfiguration.HTTPAdditionalHeaders = @{kApplicationIDKey : kApplicationID, kRESTAPIKey : kRESTAPI};
+        
         _session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
     }
     return self;
@@ -43,7 +46,7 @@
 
 - (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text completion:(StashAPICompletionHandler)completionHandler
 {
-    NSDictionary *parameters = @{@"title" : title, @"text" : text};
+    NSDictionary *parameters = @{kStashTitleKey : title, kStashTextKey : text};
     NSData *parametersData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     NSMutableURLRequest *request = [self requestForHTTPMethod:@"POST" withURL:[NSURL URLWithString:kStashAPIURL]];
     
@@ -65,9 +68,18 @@
     [[self.session dataTaskWithURL:[NSURL URLWithString:stashURLString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (!error) {
             
-            // NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            
-            // Save to Core Data + as soon as it is persisted (completion)... Make a network call to delete the idea.
+            NSDictionary *stash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            [SHStash stashWithTitle:stash[kStashTitleKey] text:stash[kStashTextKey] origin:NO completion:^(NSError *error) {
+                             if (!error) {
+                                 [[SHStashAPI sharedAPI]DELETERequestForStashWithID:stash[kStashObjectId] completion:^(NSError *error) {
+                                     if (!error) {
+                                         completionHandler(nil);
+                                     }
+                                 }];
+                             } else {
+                                 completionHandler(error);
+                             }
+                         }];
             
             completionHandler(nil);
         } else {
