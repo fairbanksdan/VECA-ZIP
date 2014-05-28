@@ -23,11 +23,6 @@
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - Action Methods
 
 - (IBAction)shareButtonSelected:(id)sender
