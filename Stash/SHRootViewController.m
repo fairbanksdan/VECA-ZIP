@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +44,10 @@
     if ([scrollView isEqual:_fgScrollView]) {
         [_bgScrollView setContentOffset:CGPointMake(_fgScrollView.contentOffset.x * 0.25, _fgScrollView.contentOffset.y) animated:NO];
     }
+}
+
+-(BOOL)prefersStatusBarHidden{
+    return YES;
 }
 
 /*
