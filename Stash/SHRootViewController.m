@@ -11,7 +11,7 @@
 @interface SHRootViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIScrollView *bgScrollView, *fgScrollView;
-
+@property (nonatomic, weak) UIViewController *activeViewController;
 @end
 
 @implementation SHRootViewController
@@ -30,9 +30,33 @@
     }
 }
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if ([scrollView isEqual:_fgScrollView])
+    {
+        // call viewViewAppear for the destination View Controller
+        NSInteger vcIndex = (NSInteger)(_fgScrollView.contentOffset.x / 320.f);
+        if ([self.childViewControllers objectAtIndex:vcIndex]) {
+            if ([_activeViewController isEqual:self.childViewControllers[vcIndex]]) {
+                return;
+            } else {
+                _activeViewController = self.childViewControllers[vcIndex];
+                [_activeViewController viewDidAppear:YES];                
+            }
+        }
+    }
+
+}
+
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"embedContainer"]) {
+        [self addChildViewController:segue.destinationViewController];
+    }
+}
 @end
