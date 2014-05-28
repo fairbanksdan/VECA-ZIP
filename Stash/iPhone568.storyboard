@@ -259,10 +259,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuestionMarkCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rA-mr-lyg">
-                                <rect key="frame" x="123" y="86" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XYZ APP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl1-75-sLU">
                                 <rect key="frame" x="125" y="204" width="71" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -296,11 +292,22 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64n-rk-IuT">
+                                <rect key="frame" x="123" y="86" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="QuestionMarkCircle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCategoryPopover:" destination="qxL-Y0-EJX" eventType="touchUpInside" id="a2b-gH-xk8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="pickCategoryButton" destination="64n-rk-IuT" id="1Tb-bb-PlY"/>
                         <outlet property="pitchTextView" destination="3h7-JQ-LHw" id="0Ds-80-UqP"/>
                         <outlet property="stashItButton" destination="xEm-RM-fPO" id="DfI-i4-r3H"/>
                         <outlet property="titleTextLabel" destination="rl1-75-sLU" id="jnR-Av-bxc"/>
@@ -389,7 +396,7 @@
                                             <constraint firstAttribute="width" constant="320" id="qeJ-dJ-jsq"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="q1K-80-EU0" kind="embed" id="uAm-ph-mmP"/>
+                                            <segue destination="q1K-80-EU0" kind="embed" identifier="embedContainer" id="uAm-ph-mmP"/>
                                         </connections>
                                     </containerView>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHd-zZ-npr" userLabel="Browse VC">
@@ -401,7 +408,7 @@
                                             <constraint firstAttribute="height" constant="568" id="YlK-WH-Suh"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="EV6-un-abM" kind="embed" id="lq7-E5-l72"/>
+                                            <segue destination="EV6-un-abM" kind="embed" identifier="embedContainer" id="lq7-E5-l72"/>
                                         </connections>
                                     </containerView>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-gm-Aue" userLabel="Home VC">
@@ -413,7 +420,7 @@
                                             <constraint firstAttribute="height" constant="568" id="aRz-Bv-vj2"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="WGJ-v1-y10" kind="embed" id="1lb-gf-WWc"/>
+                                            <segue destination="WGJ-v1-y10" kind="embed" identifier="embedContainer" id="1lb-gf-WWc"/>
                                         </connections>
                                     </containerView>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fO-gD-vJV" userLabel="AddPitch VC">
@@ -425,7 +432,7 @@
                                             <constraint firstAttribute="width" constant="320" id="FPB-g9-AxV"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="00k-v7-ePb" kind="embed" id="Y4Z-pb-GBv"/>
+                                            <segue destination="00k-v7-ePb" kind="embed" identifier="embedContainer" id="Y4Z-pb-GBv"/>
                                         </connections>
                                     </containerView>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-q2-gOD" userLabel="AddTitle VC">
@@ -437,7 +444,7 @@
                                             <constraint firstAttribute="height" constant="568" id="SA2-A8-oHe"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="lSc-LA-Tjd" kind="embed" id="IJi-iG-zgI"/>
+                                            <segue destination="lSc-LA-Tjd" kind="embed" identifier="embedContainer" id="IJi-iG-zgI"/>
                                         </connections>
                                     </containerView>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-04-oul" userLabel="AddCategory VC">
@@ -449,7 +456,7 @@
                                             <constraint firstAttribute="height" constant="568" id="Eft-mr-Oxp"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="qxL-Y0-EJX" kind="embed" id="OLC-3v-lUY"/>
+                                            <segue destination="qxL-Y0-EJX" kind="embed" identifier="embedContainer" id="OLC-3v-lUY"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -533,6 +540,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sH2-rQ-pOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186" y="98"/>
+        </scene>
+        <!--Collection Popover View Controller-->
+        <scene sceneID="7a0-gP-XT7">
+            <objects>
+                <viewController storyboardIdentifier="PopoverCategoryVC" id="dLh-OT-cfI" customClass="SHCollectionPopoverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edX-3x-e94"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZJU-Ua-xPq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Emu-I2-flX">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-vM-OcZ">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HMF-PC-u0g">
+                                    <size key="itemSize" width="60" height="72"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="DDV-RP-McN" customClass="SHCategoryPopupCollectionViewCell">
+                                        <rect key="frame" x="10" y="10" width="60" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-XE-9JH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" red="0.65814525099999999" green="0.91213101519999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jql-Xl-U7Y">
+                                                    <rect key="frame" x="-2" y="60" width="62" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="customSize" width="60" height="72"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcg-Rg-pCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="762"/>
         </scene>
     </scenes>
     <resources>

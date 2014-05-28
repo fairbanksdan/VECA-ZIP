@@ -48,6 +48,8 @@
 		D64251D619365525007A03BE /* SHTitleTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251D419365525007A03BE /* SHTitleTipsViewController.m */; };
 		D64251D719365525007A03BE /* SHTitleTipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64251D519365525007A03BE /* SHTitleTipsViewController.xib */; };
 		D64251E6193685AE007A03BE /* iPhone568.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64251E5193685AE007A03BE /* iPhone568.storyboard */; };
+		D64251E919368E7B007A03BE /* SHCollectionPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251E819368E7B007A03BE /* SHCollectionPopoverViewController.m */; };
+		D64251EC19368F40007A03BE /* SHCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251EB19368F40007A03BE /* SHCategoryCollectionViewCell.m */; };
 		D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */; };
 		D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF181935287E000A312C /* SHAddPitchViewController.m */; };
 		D6FAFF1E19352A62000A312C /* SHAddTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */; };
@@ -158,6 +160,10 @@
 		D64251D419365525007A03BE /* SHTitleTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTitleTipsViewController.m; sourceTree = "<group>"; };
 		D64251D519365525007A03BE /* SHTitleTipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTitleTipsViewController.xib; sourceTree = "<group>"; };
 		D64251E5193685AE007A03BE /* iPhone568.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone568.storyboard; sourceTree = "<group>"; };
+		D64251E719368E7B007A03BE /* SHCollectionPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionPopoverViewController.h; sourceTree = "<group>"; };
+		D64251E819368E7B007A03BE /* SHCollectionPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCollectionPopoverViewController.m; sourceTree = "<group>"; };
+		D64251EA19368F40007A03BE /* SHCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		D64251EB19368F40007A03BE /* SHCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMarkCircle.png; sourceTree = "<group>"; };
 		D6FAFF171935287E000A312C /* SHAddPitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAddPitchViewController.h; sourceTree = "<group>"; };
 		D6FAFF181935287E000A312C /* SHAddPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAddPitchViewController.m; sourceTree = "<group>"; };
@@ -354,6 +360,17 @@
 			name = "xib Controllers";
 			sourceTree = "<group>";
 		};
+		D64251ED19368F50007A03BE /* Popover Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D64251E719368E7B007A03BE /* SHCollectionPopoverViewController.h */,
+				D64251E819368E7B007A03BE /* SHCollectionPopoverViewController.m */,
+				D64251EA19368F40007A03BE /* SHCategoryCollectionViewCell.h */,
+				D64251EB19368F40007A03BE /* SHCategoryCollectionViewCell.m */,
+			);
+			name = "Popover Controllers";
+			sourceTree = "<group>";
+		};
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +388,7 @@
 				D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */,
 				D64251CA1936465F007A03BE /* SHBrowseIdeasViewController.h */,
 				D64251CB1936465F007A03BE /* SHBrowseIdeasViewController.m */,
+				D64251ED19368F50007A03BE /* Popover Controllers */,
 				D64251CD1936546A007A03BE /* xib Controllers */,
 			);
 			name = Controller;
@@ -574,7 +592,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64251EC19368F40007A03BE /* SHCategoryCollectionViewCell.m in Sources */,
 				D64251D619365525007A03BE /* SHTitleTipsViewController.m in Sources */,
+				D64251E919368E7B007A03BE /* SHCollectionPopoverViewController.m in Sources */,
 				D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */,
 				D6FAFF2119352AA3000A312C /* SHAddCategoryViewController.m in Sources */,
 				00EE13821933D409006A9DB7 /* NSManagedObject+MagicalRecord.m in Sources */,
