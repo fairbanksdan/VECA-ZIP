@@ -1,18 +1,18 @@
 //
-//  SHElevatorPitchTipsViewController.m
+//  SHBrowseIdeasViewController.m
 //  Stash
 //
-//  Created by Daniel Fairbanks on 5/27/14.
+//  Created by Daniel Fairbanks on 5/28/14.
 //  Copyright (c) 2014 stash. All rights reserved.
 //
 
-#import "SHElevatorPitchTipsViewController.h"
+#import "SHBrowseIdeasViewController.h"
 
-@interface SHElevatorPitchTipsViewController ()
+@interface SHBrowseIdeasViewController ()
 
 @end
 
-@implementation SHElevatorPitchTipsViewController
+@implementation SHBrowseIdeasViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
