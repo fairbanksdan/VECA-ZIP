@@ -341,12 +341,12 @@
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D6FAFF2C19354535000A312C /* SHRootViewController.h */,
+				D6FAFF2D19354535000A312C /* SHRootViewController.m */,
 				D64251C7193645C8007A03BE /* SHHomeViewController.h */,
 				D64251C8193645C8007A03BE /* SHHomeViewController.m */,
 				480C245B1935240900678499 /* SHEditViewController.h */,
 				480C245C1935240900678499 /* SHEditViewController.m */,
-				D6FAFF2C19354535000A312C /* SHRootViewController.h */,
-				D6FAFF2D19354535000A312C /* SHRootViewController.m */,
 				D6FAFF171935287E000A312C /* SHAddPitchViewController.h */,
 				D6FAFF181935287E000A312C /* SHAddPitchViewController.m */,
 				D6FAFF1C19352A62000A312C /* SHAddTitleViewController.h */,

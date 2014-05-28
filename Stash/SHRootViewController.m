@@ -7,6 +7,7 @@
 //
 
 #import "SHRootViewController.h"
+#import "SHHomeViewController.h"
 
 @interface SHRootViewController () <UIScrollViewDelegate>
 
@@ -20,6 +21,9 @@
 {
     [super viewDidLoad];
     [_fgScrollView setContentOffset:CGPointMake(640, 0) animated:NO];
+  
+  SHHomeViewController *homeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SHHomeViewController"];
+  homeVC.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -28,6 +32,8 @@
     {
         [_bgScrollView setContentOffset:CGPointMake(_fgScrollView.contentOffset.x * 0.25, _fgScrollView.contentOffset.y) animated:NO];
     }
+  
+  
 }
 
 -(BOOL)prefersStatusBarHidden
