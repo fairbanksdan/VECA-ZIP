@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [_fgScrollView setContentOffset:CGPointMake(640, 0) animated:NO];
     
     
 }
