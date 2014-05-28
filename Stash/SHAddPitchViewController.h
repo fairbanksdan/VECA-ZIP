@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SHAddPitchViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *trashItButton;
+@property (weak, nonatomic) IBOutlet UITextView *pitchTextView;
+@property (weak, nonatomic) IBOutlet UIButton *pitchTipsHelpButton;
 
 @end

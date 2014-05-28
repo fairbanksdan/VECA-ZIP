@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -32,6 +32,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="addIdeaButton" destination="49P-C6-IGb" id="qOG-wq-OSf"/>
+                        <outlet property="browseIdeasButton" destination="dxk-aO-vav" id="NFf-dc-c1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-m0-wyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,6 +90,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="pitchTextView" destination="MWs-Rm-nWx" id="byI-rS-tLJ"/>
+                        <outlet property="pitchTipsHelpButton" destination="j9L-qK-cOe" id="X7z-n8-Arr"/>
+                        <outlet property="trashItButton" destination="BrL-gV-UZN" id="7jy-pR-yv9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nv0-Qa-RVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +157,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="titleTextField" destination="xeY-Gd-Aey" id="mQ5-Hb-NkE"/>
+                        <outlet property="trashItButton" destination="9mC-ek-tT3" id="miY-RI-3LQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zt3-ls-0hN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

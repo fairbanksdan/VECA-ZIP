@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SHHomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *addIdeaButton;
+@property (weak, nonatomic) IBOutlet UIImageView *browseIdeasButton;
 
 @end

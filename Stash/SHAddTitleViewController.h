@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SHAddTitleViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *trashItButton;
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 
 @end
