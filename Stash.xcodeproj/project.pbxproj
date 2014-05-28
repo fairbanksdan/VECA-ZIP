@@ -46,6 +46,8 @@
 		D62B9FB5193551560009AB33 /* Update_Browse_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D62B9FB4193551560009AB33 /* Update_Browse_Button.png */; };
 		D64251C9193645C8007A03BE /* SHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251C8193645C8007A03BE /* SHHomeViewController.m */; };
 		D64251CC1936465F007A03BE /* SHBrowseIdeasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251CB1936465F007A03BE /* SHBrowseIdeasViewController.m */; };
+		D64251D619365525007A03BE /* SHTitleTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251D419365525007A03BE /* SHTitleTipsViewController.m */; };
+		D64251D719365525007A03BE /* SHTitleTipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64251D519365525007A03BE /* SHTitleTipsViewController.xib */; };
 		D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */; };
 		D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF181935287E000A312C /* SHAddPitchViewController.m */; };
 		D6FAFF1E19352A62000A312C /* SHAddTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */; };
@@ -153,6 +155,9 @@
 		D64251C8193645C8007A03BE /* SHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHomeViewController.m; sourceTree = "<group>"; };
 		D64251CA1936465F007A03BE /* SHBrowseIdeasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBrowseIdeasViewController.h; sourceTree = "<group>"; };
 		D64251CB1936465F007A03BE /* SHBrowseIdeasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBrowseIdeasViewController.m; sourceTree = "<group>"; };
+		D64251D319365525007A03BE /* SHTitleTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTitleTipsViewController.h; sourceTree = "<group>"; };
+		D64251D419365525007A03BE /* SHTitleTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTitleTipsViewController.m; sourceTree = "<group>"; };
+		D64251D519365525007A03BE /* SHTitleTipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTitleTipsViewController.xib; sourceTree = "<group>"; };
 		D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMarkCircle.png; sourceTree = "<group>"; };
 		D6FAFF171935287E000A312C /* SHAddPitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAddPitchViewController.h; sourceTree = "<group>"; };
 		D6FAFF181935287E000A312C /* SHAddPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAddPitchViewController.m; sourceTree = "<group>"; };
@@ -338,6 +343,17 @@
 			name = StashAPI;
 			sourceTree = "<group>";
 		};
+		D64251CD1936546A007A03BE /* xib Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
+				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
+				D64251D319365525007A03BE /* SHTitleTipsViewController.h */,
+				D64251D419365525007A03BE /* SHTitleTipsViewController.m */,
+			);
+			name = "xib Controllers";
+			sourceTree = "<group>";
+		};
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,10 +369,9 @@
 				D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */,
 				D6FAFF1F19352AA3000A312C /* SHAddCategoryViewController.h */,
 				D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */,
-				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
-				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
 				D64251CA1936465F007A03BE /* SHBrowseIdeasViewController.h */,
 				D64251CB1936465F007A03BE /* SHBrowseIdeasViewController.m */,
+				D64251CD1936546A007A03BE /* xib Controllers */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -366,6 +381,7 @@
 			children = (
 				48A4551B1933A8E6001B7173 /* iPhone568.storyboard */,
 				D6FAFF2919352F1E000A312C /* SHPitchTipsViewController.xib */,
+				D64251D519365525007A03BE /* SHTitleTipsViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -533,6 +549,7 @@
 				D62B9FAF1935513D0009AB33 /* Glowing_Browse_Button.png in Resources */,
 				D62B9FB5193551560009AB33 /* Update_Browse_Button.png in Resources */,
 				48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */,
+				D64251D719365525007A03BE /* SHTitleTipsViewController.xib in Resources */,
 				D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */,
 				D62B9FAD193551360009AB33 /* GlowAddButton.png in Resources */,
 				D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */,
@@ -557,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64251D619365525007A03BE /* SHTitleTipsViewController.m in Sources */,
 				D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */,
 				D6FAFF2119352AA3000A312C /* SHAddCategoryViewController.m in Sources */,
 				00EE13821933D409006A9DB7 /* NSManagedObject+MagicalRecord.m in Sources */,
