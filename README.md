@@ -3,7 +3,7 @@ Stash. - Save App Ideas "for iOS 7, Xcode, Mac OS X, WWDC" by Mind Diaper https:
 
 ##Build Steps
 
-1. Clone the repo
+1 – Clone the repo
 ```
 $ git clone git@github.com:taylorkpotter/Stash.git
 ```
@@ -13,13 +13,13 @@ $ git remote add upstream git@github.com:taylorkpotter/Stash.git
 $ git pull upstream master
 ```
 
-2. Install CocoaPods
+2 – Install CocoaPods
 ```
 $ cd Stash
 $ pod install
 ```
 
-3. There is no step 3
+3 – There is no step 3
 
 ##Description
 Have you every said, or heard someone say, "I have a great idea for an app"?
@@ -32,6 +32,6 @@ Stash. was developed to be a dead simple way to get those app ideas saved and re
 
 2. Give the app a working title
 
-3. Describe the app in enough detail that you will remember it later. 
+3. Describe the app in enough detail that you will remember it later.
 
 4. Stash It!
