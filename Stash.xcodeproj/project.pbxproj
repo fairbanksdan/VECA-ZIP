@@ -411,8 +411,8 @@
 		D788E7301933A5AB002D59B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */,
 				00EE133B1933D409006A9DB7 /* MagicalRecord */,
+				D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */,
 				D788E7311933A5AB002D59B5 /* Stash-Info.plist */,
 				D788E7321933A5AB002D59B5 /* InfoPlist.strings */,
 				D788E7351933A5AB002D59B5 /* main.m */,
