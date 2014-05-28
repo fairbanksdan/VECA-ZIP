@@ -20,21 +20,27 @@
                                 <rect key="frame" x="66" y="56" width="189" height="79"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Update_Add_Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="49P-C6-IGb">
-                                <rect key="frame" x="98" y="184" width="124" height="124"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZS-ot-gGb">
+                                <rect key="frame" x="98" y="194" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Update_Browse_Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="dxk-aO-vav">
-                                <rect key="frame" x="98" y="371" width="125" height="125"/>
+                                <state key="normal" image="Update_Add_Button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGr-uF-kCd">
+                                <rect key="frame" x="98" y="384" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" image="Update_Browse_Button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="addIdeaButton" destination="49P-C6-IGb" id="qOG-wq-OSf"/>
-                        <outlet property="browseIdeasButton" destination="dxk-aO-vav" id="NFf-dc-c1H"/>
+                        <outlet property="addIdeaButton" destination="TZS-ot-gGb" id="OYR-X3-l6j"/>
+                        <outlet property="browseIdeasButton" destination="KGr-uF-kCd" id="QAT-2i-aXJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-m0-wyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,7 +164,9 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="pitchTextView" destination="jr8-cU-5oo" id="yxF-Q9-iaR"/>
                         <outlet property="titleTextField" destination="xeY-Gd-Aey" id="mQ5-Hb-NkE"/>
+                        <outlet property="titleTipsHelpButton" destination="y3b-3r-sfZ" id="VwF-KG-iry"/>
                         <outlet property="trashItButton" destination="9mC-ek-tT3" id="miY-RI-3LQ"/>
                     </connections>
                 </viewController>
@@ -226,6 +234,12 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="pitchTextView" destination="3h7-JQ-LHw" id="0Ds-80-UqP"/>
+                        <outlet property="stashItButton" destination="xEm-RM-fPO" id="DfI-i4-r3H"/>
+                        <outlet property="titleTextLabel" destination="rl1-75-sLU" id="jnR-Av-bxc"/>
+                        <outlet property="trashItButton" destination="RoI-uD-lOl" id="ufb-g3-ir2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiM-nQ-hix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
