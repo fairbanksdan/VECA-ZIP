@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
+	<string>1272F085-9BC6-424F-B744-20DD6A0470B9</string>
+=======
+	<string>CE8E30E1-F82A-4F33-B0C3-BE3C5C2FB3BB</string>
+>>>>>>> 54f26717c01840112b7d4929084af58336a230dc
+	<key>IDESourceControlProjectName</key>
+	<string>Stash</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+<<<<<<< HEAD
+		<key>7272B3F7-2885-4A30-865F-2F4D7E0C31B2</key>
+		<string>ssh://github.com/michaelbabiy/Stash.git</string>
+=======
+		<key>ACF86874-6C99-4D02-84A0-B447DF06E1D4</key>
+		<string>ssh://github.com/taylorkpotter/Stash.git</string>
+>>>>>>> 54f26717c01840112b7d4929084af58336a230dc
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stash.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+<<<<<<< HEAD
+		<key>7272B3F7-2885-4A30-865F-2F4D7E0C31B2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/michaelbabiy/Stash.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7272B3F7-2885-4A30-865F-2F4D7E0C31B2</string>
+=======
+		<key>ACF86874-6C99-4D02-84A0-B447DF06E1D4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/taylorkpotter/Stash.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACF86874-6C99-4D02-84A0-B447DF06E1D4</string>
+>>>>>>> 54f26717c01840112b7d4929084af58336a230dc
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
+			<string>7272B3F7-2885-4A30-865F-2F4D7E0C31B2</string>
+=======
+			<string>ACF86874-6C99-4D02-84A0-B447DF06E1D4</string>
+>>>>>>> 54f26717c01840112b7d4929084af58336a230dc
+			<key>IDESourceControlWCCName</key>
+			<string>Stash</string>
+		</dict>
+	</array>
+</dict>
+</plist>
