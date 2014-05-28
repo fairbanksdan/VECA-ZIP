@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eqP-su-NJw">
+=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
+>>>>>>> b5eb815b120249961b26735e1d7e0fa7a1440d34
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,6 +20,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJG-KK-RTs">
+                                <rect key="frame" x="0.0" y="262" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Navigate To Share VC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="q1K-80-EU0" kind="push" id="32n-uF-6fC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="owd-UB-rLO"/>
+=======
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnu-sR-d0N">
                                 <rect key="frame" x="20" y="20" width="220" height="295"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -28,11 +50,15 @@
                     <connections>
                         <outlet property="label" destination="Nnu-sR-d0N" id="Udh-9B-oI3"/>
                     </connections>
+>>>>>>> b5eb815b120249961b26735e1d7e0fa7a1440d34
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-m0-wyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="705" y="98"/>
         </scene>
+<<<<<<< HEAD
+        <!--Edit View Controller - Edit-->
+=======
         <!--Add Pitch View Controller-->
         <scene sceneID="Vlq-qc-2Sn">
             <objects>
@@ -192,6 +218,7 @@
             <point key="canvasLocation" x="1509" y="98"/>
         </scene>
         <!--Edit View Controller-->
+>>>>>>> b5eb815b120249961b26735e1d7e0fa7a1440d34
         <scene sceneID="PbU-1w-D5h">
             <objects>
                 <viewController storyboardIdentifier="SHEditViewController" id="q1K-80-EU0" customClass="SHEditViewController" sceneMemberID="viewController">
@@ -222,6 +249,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fre-k5-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
+            <point key="canvasLocation" x="1105" y="98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sLr-Bu-3kv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eqP-su-NJw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xVz-ea-rgk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WGJ-v1-y10" kind="relationship" relationship="rootViewController" id="cdy-Oa-bE9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWX-GF-AtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="98"/>
+=======
             <point key="canvasLocation" x="308" y="-599"/>
         </scene>
         <!--Root View Controller-->
@@ -334,6 +382,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cud-LO-lhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="704" y="-1258"/>
+>>>>>>> b5eb815b120249961b26735e1d7e0fa7a1440d34
         </scene>
     </scenes>
     <resources>
