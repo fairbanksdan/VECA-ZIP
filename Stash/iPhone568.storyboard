@@ -245,7 +245,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationItem key="navigationItem" title="Edit" id="5BI-dH-iC7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fre-k5-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
