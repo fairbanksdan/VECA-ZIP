@@ -12,6 +12,7 @@
 
 @interface SHHomeViewController ()
 
+
 @end
 
 @implementation SHHomeViewController
@@ -24,31 +25,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-}
-
-- (IBAction)create:(id)sender
-{
-  [SHStash stashWithTitle:@"App Name" text:@"This app is awesome" origin:YES completion:^(NSError *error) {
-    if (!error) {
-      NSLog(@"Success!!");
-    }
-  }];
-}
-
-- (IBAction)delete:(id)sender
-{
-  NSArray *results = [SHStash findAll];
-  for (SHStash *stash in results) {
-      
-    [SHStash deleteStash:stash completion:^(NSError *error) {
-      NSLog(@"Deleted Stash");
-    }];
-  }
-}
-
-- (IBAction)read:(id)sender
-{
-    //
 }
 
 @end
