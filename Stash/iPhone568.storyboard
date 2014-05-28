@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -87,19 +87,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBw-rG-vwL">
-                                <rect key="frame" x="42" y="103" width="237" height="348"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" text="This app will help people do stuff with stuff..." translatesAutoresizingMaskIntoConstraints="NO" id="lRo-SO-TLO">
+                                <rect key="frame" x="40" y="103" width="240" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="pitchTextField" destination="JBw-rG-vwL" id="85N-w4-SXs"/>
+                        <outlet property="pitchTextView" destination="lRo-SO-TLO" id="6l9-Yv-PYA"/>
                         <outlet property="pitchTipsHelpButton" destination="j9L-qK-cOe" id="X7z-n8-Arr"/>
                         <outlet property="trashItButton" destination="BrL-gV-UZN" id="7jy-pR-yv9"/>
                     </connections>
@@ -137,7 +137,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0p-KF-ErD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="813"/>
+            <point key="canvasLocation" x="718" y="775"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9nI-fM-z6B">
+            <objects>
+                <viewController storyboardIdentifier="PopoverTitleVC" id="PYY-1L-lBE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pis-PS-rDG"/>
+                        <viewControllerLayoutGuide type="bottom" id="saF-Eo-a1h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dfc-Tr-aPr">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Awesome titles are created by using awesome words that people think are awesome." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-C8-4bM">
+                                <rect key="frame" x="5" y="5" width="250" height="290"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="260" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYA-fP-gwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131" y="775"/>
         </scene>
         <!--Add Title View Controller-->
         <scene sceneID="iBM-hM-HzH">
@@ -174,6 +204,9 @@
                                     <color key="titleColor" red="0.40939414410000002" green="0.85702327810000001" blue="0.38662327549999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showHint:" destination="lSc-LA-Tjd" eventType="touchUpInside" id="wFQ-yk-Kq2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mC-ek-tT3">
                                 <rect key="frame" x="20" y="20" width="54" height="30"/>
