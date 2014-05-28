@@ -20,4 +20,9 @@
   
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"View Did Appear");
+}
 @end
