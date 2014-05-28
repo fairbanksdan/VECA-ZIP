@@ -31,7 +31,7 @@ typedef void(^StashAPICompletionHandler)(NSError *error);
 + (SHStashAPI *)sharedAPI;
 
 // Method for creating a POST request to Parse. This will create the Parse object without any permission.
-- (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text completion:(StashAPICompletionHandler)completionHandler;
+- (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text uuid:(NSString *)uuid completion:(StashAPICompletionHandler)completionHandler;
 
 // Method for GETting a stash from Parse for specific stash ID (stash).
 - (void)GETRequestForStash:(NSString *)stash completion:(StashAPICompletionHandler)completionHandler;

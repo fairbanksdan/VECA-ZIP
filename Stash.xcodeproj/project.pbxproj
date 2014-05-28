@@ -428,6 +428,7 @@
 				D62B9FB0193551450009AB33 /* Stash_Logo_And_Tagline.png */,
 				D62B9FB2193551500009AB33 /* Update_Add_Button.png */,
 				00EE133B1933D409006A9DB7 /* MagicalRecord */,
+				D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */,
 				D788E7311933A5AB002D59B5 /* Stash-Info.plist */,
 				D788E7321933A5AB002D59B5 /* InfoPlist.strings */,
 				D788E7351933A5AB002D59B5 /* main.m */,

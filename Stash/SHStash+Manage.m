@@ -25,7 +25,7 @@
             SHStash *stash = [SHStash createInContext:localContext];
             stash.title = title;
             stash.text = text;
-            stash.stashID = [[NSUUID UUID] UUIDString];
+            stash.stashID = [[[[[NSUUID UUID]UUIDString]lowercaseString]stringByReplacingOccurrencesOfString:@"-" withString:@""]substringToIndex:12];
             stash.date = [NSDate date];
             stash.isMine = @(isMine);
         } completion:^(BOOL success, NSError *error) {
