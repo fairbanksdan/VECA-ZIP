@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller - Home-->
+        <!--Home View Controller-->
         <scene sceneID="oCp-3s-iy9">
             <objects>
                 <viewController storyboardIdentifier="SHHomeViewController" id="WGJ-v1-y10" customClass="SHHomeViewController" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-m0-wyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="98"/>
+            <point key="canvasLocation" x="29" y="182"/>
         </scene>
         <!--Add Pitch View Controller-->
         <scene sceneID="Vlq-qc-2Sn">
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nv0-Qa-RVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="98"/>
+            <point key="canvasLocation" x="496" y="174"/>
         </scene>
         <!--Add Title View Controller-->
         <scene sceneID="iBM-hM-HzH">
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zt3-ls-0hN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101" y="98"/>
+            <point key="canvasLocation" x="985" y="166"/>
         </scene>
         <!--Add Category View Controller-->
         <scene sceneID="fu0-wm-P0k">
@@ -216,9 +216,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiM-nQ-hix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="98"/>
+            <point key="canvasLocation" x="1511" y="194"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--Edit View Controller - Edit-->
         <scene sceneID="PbU-1w-D5h">
             <objects>
                 <viewController storyboardIdentifier="SHEditViewController" id="q1K-80-EU0" customClass="SHEditViewController" sceneMemberID="viewController">
