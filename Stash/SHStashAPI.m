@@ -45,7 +45,7 @@
 
 - (void)POSTRequestForStashWithTitle:(NSString *)title text:(NSString *)text uuid:(NSString *)uuid completion:(StashAPICompletionHandler)completionHandler
 {
-    NSDictionary *parameters = @{kStashTitleKey : title, kStashTextKey : text, @"uuid" : uuid};
+    NSDictionary *parameters = @{kStashTitleKey : title, kStashTextKey : text, kStashObjectUUID : uuid};
     NSData *parametersData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     NSMutableURLRequest *request = [self requestForHTTPMethod:@"POST" withURL:[NSURL URLWithString:kStashAPIURL]];
     [request setHTTPBody:parametersData];
