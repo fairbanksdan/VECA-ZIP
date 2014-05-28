@@ -1,5 +1,5 @@
 //
-//  SHHomeViewController.h
+//  SHBrowseIdeasViewController.h
 //  Stash
 //
 //  Created by Daniel Fairbanks on 5/28/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHHomeViewController : UIViewController
+@interface SHBrowseIdeasViewController : UIViewController
 
 @end
