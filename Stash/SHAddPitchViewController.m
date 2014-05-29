@@ -7,8 +7,12 @@
 //
 
 #import "SHAddPitchViewController.h"
+#import "CoreData+MagicalRecord.h"
+#import "SHStash.h"
 
 @interface SHAddPitchViewController ()
+
+@property (strong, nonatomic) SHStash *stash;
 
 @end
 
@@ -26,7 +30,13 @@
 {
     [super viewDidAppear:animated];
     
-    NSLog(@"Add Pitch loaded...");
+    self.stash = [SHStash createEntity];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"AddPitch view did dissapear...");
 }
 
 @end
