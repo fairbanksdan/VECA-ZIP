@@ -29,7 +29,7 @@
     
     NSArray *results = [SHStash findAll];
     for (SHStash *stash in results) {
-        NSLog(@"%@", stash.title);
+        // NSLog(@"%@", stash.title);
     }
 }
 
@@ -38,13 +38,8 @@
     [super viewDidDisappear:animated];
     [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
     
-//    [self.pitchTextField resignFirstResponder];
+    NSLog(@"dissapear method called.");
 }
-
-//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//    [self.pitchTextField resignFirstResponder];
-//}
 
 
 
