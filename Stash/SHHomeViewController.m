@@ -31,4 +31,10 @@
     NSLog(@"Home view did dissapear...");
 }
 
+- (IBAction)addStashButtonSelected:(id)sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAddStashButtonSelected object:nil];
+    
+}
+
 @end
