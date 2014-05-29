@@ -48,6 +48,10 @@
 		48A4551F1933A9F0001B7173 /* SHStashAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A4551E1933A9F0001B7173 /* SHStashAPI.m */; };
 		48A8DE2D193650F90091A515 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		D6A2CDF51937EDC00034D397 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */; };
+		D6A2CDF91937EED90034D397 /* SHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF81937EED90034D397 /* SHCategory.m */; };
+		D6A2CDFE1937EF080034D397 /* SHCollectionPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */; };
+		D6A2CDFF1937EF080034D397 /* SHCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */; };
+		D6A2CE011937EF9A0034D397 /* IconPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6A2CE001937EF9A0034D397 /* IconPList.plist */; };
 		D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */; };
 		D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF181935287E000A312C /* SHAddPitchViewController.m */; };
 		D6FAFF1E19352A62000A312C /* SHAddTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */; };
@@ -160,6 +164,13 @@
 		D62B9FAE1935513D0009AB33 /* Glowing_Browse_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Glowing_Browse_Button.png; sourceTree = "<group>"; };
 		D6A2CDF31937EDC00034D397 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		D6A2CDF71937EED90034D397 /* SHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCategory.h; sourceTree = "<group>"; };
+		D6A2CDF81937EED90034D397 /* SHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCategory.m; sourceTree = "<group>"; };
+		D6A2CDFA1937EF080034D397 /* SHCollectionPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionPopoverViewController.h; sourceTree = "<group>"; };
+		D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCollectionPopoverViewController.m; sourceTree = "<group>"; };
+		D6A2CDFC1937EF080034D397 /* SHCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		D6A2CE001937EF9A0034D397 /* IconPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IconPList.plist; sourceTree = "<group>"; };
 		D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMarkCircle.png; sourceTree = "<group>"; };
 		D6FAFF171935287E000A312C /* SHAddPitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAddPitchViewController.h; sourceTree = "<group>"; };
 		D6FAFF181935287E000A312C /* SHAddPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAddPitchViewController.m; sourceTree = "<group>"; };
@@ -386,6 +397,15 @@
 			name = StashAPI;
 			sourceTree = "<group>";
 		};
+		D6A2CDF61937EEC90034D397 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6A2CDF71937EED90034D397 /* SHCategory.h */,
+				D6A2CDF81937EED90034D397 /* SHCategory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +416,10 @@
 				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
 				00E62AF719378BF9006AA5A8 /* SHBrowseIdeasViewController.h */,
 				00E62AF819378BF9006AA5A8 /* SHBrowseIdeasViewController.m */,
+				D6A2CDFA1937EF080034D397 /* SHCollectionPopoverViewController.h */,
+				D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */,
+				D6A2CDFC1937EF080034D397 /* SHCategoryCollectionViewCell.h */,
+				D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -441,6 +465,7 @@
 		D788E72F1933A5AB002D59B5 /* Stash */ = {
 			isa = PBXGroup;
 			children = (
+				D6A2CDF61937EEC90034D397 /* Model */,
 				D6A2CDF31937EDC00034D397 /* UIImage+ImageEffects.h */,
 				D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */,
 				D788E7381933A5AB002D59B5 /* SHAppDelegate.h */,
@@ -459,6 +484,7 @@
 		D788E7301933A5AB002D59B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6A2CE001937EF9A0034D397 /* IconPList.plist */,
 				485CF30819368CCF00E16756 /* MBStoreCheck */,
 				485CF2B019368CB800E16756 /* MagicalRecord */,
 				485CF30719368CC100E16756 /* Images */,
@@ -578,6 +604,7 @@
 				D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */,
 				0041AE1119379007001491D5 /* Stash_Logo_And_Tagline.png in Resources */,
 				D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */,
+				D6A2CE011937EF9A0034D397 /* IconPList.plist in Resources */,
 				D788E73C1933A5AB002D59B5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */,
+				D6A2CDFE1937EF080034D397 /* SHCollectionPopoverViewController.m in Sources */,
 				D6FAFF2119352AA3000A312C /* SHAddCategoryViewController.m in Sources */,
 				485CF30319368CB800E16756 /* MagicalRecord+Options.m in Sources */,
 				485CF30B19368CCF00E16756 /* MBStoreCheck.m in Sources */,
@@ -629,11 +657,13 @@
 				4822BAA219379F90007BEE49 /* SHStashCloud.m in Sources */,
 				485CF2F719368CB800E16756 /* NSManagedObject+MagicalRecord.m in Sources */,
 				485CF2FB19368CB800E16756 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				D6A2CDF91937EED90034D397 /* SHCategory.m in Sources */,
 				485CF2F019368CB800E16756 /* NSNumber+MagicalDataImport.m in Sources */,
 				485CF2F919368CB800E16756 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				485CF30219368CB800E16756 /* MagicalRecord+iCloud.m in Sources */,
 				D788E73A1933A5AB002D59B5 /* SHAppDelegate.m in Sources */,
 				485CF2F419368CB800E16756 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				D6A2CDFF1937EF080034D397 /* SHCategoryCollectionViewCell.m in Sources */,
 				485CF2ED19368CB800E16756 /* MagicalImportFunctions.m in Sources */,
 				485CF2EE19368CB800E16756 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				485CF2F219368CB800E16756 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
