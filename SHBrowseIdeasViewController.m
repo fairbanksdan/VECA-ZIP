@@ -2,7 +2,7 @@
 //  SHBrowseIdeasViewController.m
 //  Stash
 //
-//  Created by Daniel Fairbanks on 5/28/14.
+//  Created by Reed Sweeney on 5/29/14.
 //  Copyright (c) 2014 stash. All rights reserved.
 //
 
@@ -14,16 +14,17 @@
 
 @implementation SHBrowseIdeasViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    NSLog(@"Browse Ideas loaded...");
+    NSLog(@"Browse loaded...");
 }
 
 @end
