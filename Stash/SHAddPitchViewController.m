@@ -10,6 +10,8 @@
 
 @interface SHAddPitchViewController () <UITextFieldDelegate>
 
+- (void)didSaveToCoreData;
+
 @end
 
 @implementation SHAddPitchViewController
@@ -21,27 +23,25 @@
     UIColor *color = [UIColor whiteColor];
     _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
                                                                             attributes:@{NSForegroundColorAttributeName:color}];
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    NSArray *results = [SHStash findAll];
-    for (SHStash *stash in results) {
-        // NSLog(@"%@", stash.title);
-    }
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didSaveToCoreData) name:NSManagedObjectContextDidSaveNotification object:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
     [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
-    
-    NSLog(@"dissapear method called.");
 }
 
-
-
+- (void)didSaveToCoreData
+{
+    self.pitchTextField.text = nil;
+}
 
 @end
