@@ -28,9 +28,99 @@
     </dict>
     <dict>
         <key>imageName</key>
-        <string>education-icon</string>
+        <string>entertainment-icon</string>
         <key>category</key>
-        <string>Education</string>
+        <string>Entertainment</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>finance-icon</string>
+        <key>category</key>
+        <string>Finance</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>fitness-icon</string>
+        <key>category</key>
+        <string>Fitness</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>game-icon</string>
+        <key>category</key>
+        <string>Games</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>health-icon</string>
+        <key>category</key>
+        <string>Health &amp; Fitness</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>lifestyle-icon</string>
+        <key>category</key>
+        <string>Lifestyle</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>mapping-icon</string>
+        <key>category</key>
+        <string>Navigation</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>music-icon</string>
+        <key>category</key>
+        <string>Music</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>news-icon</string>
+        <key>category</key>
+        <string>News</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>productivity-icon</string>
+        <key>category</key>
+        <string>Productivity</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>resource-icon</string>
+        <key>category</key>
+        <string>Reference</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>social-icon</string>
+        <key>category</key>
+        <string>Social Networking</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>sports-icon</string>
+        <key>category</key>
+        <string>Sports</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>travel-icon</string>
+        <key>category</key>
+        <string>Travel</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>utility-icon</string>
+        <key>category</key>
+        <string>Utility</string>
+    </dict>
+    <dict>
+        <key>imageName</key>
+        <string>weather-icon</string>
+        <key>category</key>
+        <string>Weather</string>
     </dict>
 </array>
 </plist>
