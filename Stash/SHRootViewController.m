@@ -32,6 +32,7 @@
 @property (nonatomic, strong) SHAddCategoryViewController *addCategoryViewController;
 
 - (void)returnToHomeView;
+- (void)trashStash;
 
 @end
 
@@ -46,8 +47,10 @@
     [self setupInitialViewControllers];
     
     [_fgScrollView setContentOffset:CGPointMake(640, 0) animated:NO];
+    
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(returnToHomeView) name:NSManagedObjectContextDidSaveNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addNewStash) name:kAddStashButtonSelected object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(trashStash) name:kTrashStashButtonSelected object:nil];
 }
 
 -(void)setupInitialViewControllers
@@ -179,6 +182,13 @@
             [self.addPitchViewController.pitchTextField becomeFirstResponder];
         });
     });
+}
+
+- (void)trashStash
+{
+    [[[SHStashCloud sharedCloud]stash]setTitle:nil];
+    [[[SHStashCloud sharedCloud]stash]setText:nil];
+    [self returnToHomeView];
 }
 
 @end
