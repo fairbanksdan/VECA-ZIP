@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -26,9 +26,6 @@
                                 <state key="normal" image="Update_Add_Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="createNewIdea:" destination="WGJ-v1-y10" eventType="touchUpInside" id="A2j-Er-q2c"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGr-uF-kCd">
                                 <rect key="frame" x="98" y="384" width="124" height="124"/>
@@ -53,7 +50,7 @@
         <!--Add Pitch View Controller-->
         <scene sceneID="Vlq-qc-2Sn">
             <objects>
-                <viewController id="00k-v7-ePb" userLabel="Add Pitch View Controller" customClass="SHAddPitchViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SHAddPitchViewController" id="00k-v7-ePb" userLabel="Add Pitch View Controller" customClass="SHAddPitchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uaX-PE-DU4"/>
                         <viewControllerLayoutGuide type="bottom" id="MK2-Wa-qRx"/>
@@ -77,9 +74,6 @@
                                     <color key="titleColor" red="0.40939414410000002" green="0.85702327810000001" blue="0.38662327549999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="showHint:" destination="00k-v7-ePb" eventType="touchUpInside" id="t6P-SH-454"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrL-gV-UZN">
                                 <rect key="frame" x="20" y="20" width="54" height="30"/>
@@ -90,19 +84,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" text="This app will help people do stuff with stuff..." translatesAutoresizingMaskIntoConstraints="NO" id="lRo-SO-TLO">
-                                <rect key="frame" x="40" y="103" width="240" height="423"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBw-rG-vwL">
+                                <rect key="frame" x="42" y="103" width="237" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="pitchTextView" destination="lRo-SO-TLO" id="6l9-Yv-PYA"/>
+                        <outlet property="pitchTextField" destination="JBw-rG-vwL" id="85N-w4-SXs"/>
                         <outlet property="pitchTipsHelpButton" destination="j9L-qK-cOe" id="X7z-n8-Arr"/>
                         <outlet property="trashItButton" destination="BrL-gV-UZN" id="7jy-pR-yv9"/>
                     </connections>
@@ -111,71 +105,10 @@
             </objects>
             <point key="canvasLocation" x="688" y="98"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="A9y-s8-kvJ">
-            <objects>
-                <viewController storyboardIdentifier="PopoverVC" id="hmc-eL-mr9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZAS-SL-ejF"/>
-                        <viewControllerLayoutGuide type="bottom" id="M2B-Vy-tO0"/>
-                    </layoutGuides>
-                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="auL-V6-TYV">
-                        <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePY-0L-JuK">
-                                <rect key="frame" x="5" y="5" width="250" height="290"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Pretend you stepped into an elevator and an Angel investor walked in. You only had 45 seconds to pitch your idea to him/her. What would you say?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="260" height="300"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0p-KF-ErD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="718" y="775"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="9nI-fM-z6B">
-            <objects>
-                <viewController storyboardIdentifier="PopoverTitleVC" id="PYY-1L-lBE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Pis-PS-rDG"/>
-                        <viewControllerLayoutGuide type="bottom" id="saF-Eo-a1h"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Dfc-Tr-aPr">
-                        <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Awesome titles are created by using awesome words that people think are awesome." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-C8-4bM">
-                                <rect key="frame" x="5" y="5" width="250" height="290"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="260" height="300"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OYA-fP-gwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1131" y="775"/>
-        </scene>
         <!--Add Title View Controller-->
         <scene sceneID="iBM-hM-HzH">
             <objects>
-                <viewController id="lSc-LA-Tjd" customClass="SHAddTitleViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SHAddTitleViewController" id="lSc-LA-Tjd" customClass="SHAddTitleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sBd-9e-isr"/>
                         <viewControllerLayoutGuide type="bottom" id="O7B-yE-Kmh"/>
@@ -207,9 +140,6 @@
                                     <color key="titleColor" red="0.40939414410000002" green="0.85702327810000001" blue="0.38662327549999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="showHint:" destination="lSc-LA-Tjd" eventType="touchUpInside" id="wFQ-yk-Kq2"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mC-ek-tT3">
                                 <rect key="frame" x="20" y="20" width="54" height="30"/>
@@ -246,7 +176,7 @@
         <!--Add Category View Controller-->
         <scene sceneID="fu0-wm-P0k">
             <objects>
-                <viewController id="qxL-Y0-EJX" customClass="SHAddCategoryViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SHAddCategoryViewController" id="qxL-Y0-EJX" customClass="SHAddCategoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EW3-xN-ZH6"/>
                         <viewControllerLayoutGuide type="bottom" id="cKx-8r-9r9"/>
@@ -262,6 +192,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuestionMarkCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rA-mr-lyg">
+                                <rect key="frame" x="123" y="86" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XYZ APP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl1-75-sLU">
                                 <rect key="frame" x="125" y="204" width="71" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -295,22 +229,11 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64n-rk-IuT">
-                                <rect key="frame" x="123" y="86" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="QuestionMarkCircle.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showCategoryPopover:" destination="qxL-Y0-EJX" eventType="touchUpInside" id="a2b-gH-xk8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="pickCategoryButton" destination="64n-rk-IuT" id="1Tb-bb-PlY"/>
                         <outlet property="pitchTextView" destination="3h7-JQ-LHw" id="0Ds-80-UqP"/>
                         <outlet property="stashItButton" destination="xEm-RM-fPO" id="DfI-i4-r3H"/>
                         <outlet property="titleTextLabel" destination="rl1-75-sLU" id="jnR-Av-bxc"/>
@@ -352,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fre-k5-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-630" y="40"/>
+            <point key="canvasLocation" x="-628" y="98"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="c2x-Qc-mXq">
@@ -398,69 +321,51 @@
                                             <constraint firstAttribute="height" constant="568" id="6b4-Fc-QQ9"/>
                                             <constraint firstAttribute="width" constant="320" id="qeJ-dJ-jsq"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="q1K-80-EU0" kind="embed" identifier="embedContainer" id="uAm-ph-mmP"/>
-                                        </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHd-zZ-npr" userLabel="Browse VC">
-                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                    <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HHd-zZ-npr" userLabel="Browse VC">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="2jN-Mc-D2I"/>
                                             <constraint firstAttribute="height" constant="568" id="YlK-WH-Suh"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="EV6-un-abM" kind="embed" identifier="embedContainer" id="lq7-E5-l72"/>
-                                        </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-gm-Aue" userLabel="Home VC">
-                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                    <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-gm-Aue" userLabel="Home VC">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="LV5-54-rAO"/>
                                             <constraint firstAttribute="height" constant="568" id="aRz-Bv-vj2"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="WGJ-v1-y10" kind="embed" identifier="embedContainer" id="1lb-gf-WWc"/>
-                                        </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fO-gD-vJV" userLabel="AddPitch VC">
-                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                    <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fO-gD-vJV" userLabel="AddPitch VC">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="568" id="D7s-V7-dTZ"/>
                                             <constraint firstAttribute="width" constant="320" id="FPB-g9-AxV"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="00k-v7-ePb" kind="embed" identifier="embedContainer" id="Y4Z-pb-GBv"/>
-                                        </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-q2-gOD" userLabel="AddTitle VC">
-                                        <rect key="frame" x="1280" y="0.0" width="320" height="568"/>
+                                    <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-q2-gOD" userLabel="AddTitle VC">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="PQj-1e-dI1"/>
                                             <constraint firstAttribute="height" constant="568" id="SA2-A8-oHe"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="lSc-LA-Tjd" kind="embed" identifier="embedContainer" id="IJi-iG-zgI"/>
-                                        </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-04-oul" userLabel="AddCategory VC">
-                                        <rect key="frame" x="1600" y="0.0" width="320" height="568"/>
+                                    <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vA-04-oul" userLabel="AddCategory VC">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="18r-Ox-rm5"/>
                                             <constraint firstAttribute="height" constant="568" id="Eft-mr-Oxp"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="qxL-Y0-EJX" kind="embed" identifier="embedContainer" id="OLC-3v-lUY"/>
-                                        </connections>
                                     </containerView>
                                 </subviews>
                                 <constraints>
@@ -508,8 +413,14 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="addCategoryVCContainer" destination="1vA-04-oul" id="gvx-Rz-Xdv"/>
+                        <outlet property="addPitchVCContainer" destination="9fO-gD-vJV" id="BB0-0L-bGi"/>
+                        <outlet property="addTitleVCContainer" destination="0m7-q2-gOD" id="iEj-mc-Ejj"/>
                         <outlet property="bgScrollView" destination="6tg-fc-vv9" id="wMy-w4-oU7"/>
+                        <outlet property="browseVCContainer" destination="HHd-zZ-npr" id="Pyv-ce-Elt"/>
+                        <outlet property="editVCContainer" destination="soH-fE-0rm" id="q9e-jJ-hRg"/>
                         <outlet property="fgScrollView" destination="Ref-Nm-yRX" id="N89-9U-5WT"/>
+                        <outlet property="homeVCContainer" destination="hIg-gm-Aue" id="nIT-qg-98e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cud-LO-lhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -519,7 +430,7 @@
         <!--Browse Ideas View Controller-->
         <scene sceneID="KX8-cn-gOT">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EV6-un-abM" customClass="SHBrowseIdeasViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SHBrowseIdeasViewController" automaticallyAdjustsScrollViewInsets="NO" id="EV6-un-abM" customClass="SHBrowseIdeasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qby-5s-o52"/>
                         <viewControllerLayoutGuide type="bottom" id="eTw-Bw-FDR"/>
@@ -543,67 +454,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sH2-rQ-pOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186" y="98"/>
-        </scene>
-        <!--Collection Popover View Controller-->
-        <scene sceneID="7a0-gP-XT7">
-            <objects>
-                <viewController storyboardIdentifier="PopoverCategoryVC" id="dLh-OT-cfI" customClass="SHCollectionPopoverViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="edX-3x-e94"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZJU-Ua-xPq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Emu-I2-flX">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-vM-OcZ">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HMF-PC-u0g">
-                                    <size key="itemSize" width="60" height="72"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="DDV-RP-McN" customClass="SHCategoryPopupCollectionViewCell">
-                                        <rect key="frame" x="10" y="10" width="60" height="72"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="60" height="72"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-XE-9JH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.65814525099999999" green="0.91213101519999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jql-Xl-U7Y">
-                                                    <rect key="frame" x="-2" y="60" width="62" height="12"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="customSize" width="60" height="72"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="300" height="500"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vcg-Rg-pCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1533" y="762"/>
         </scene>
     </scenes>
     <resources>

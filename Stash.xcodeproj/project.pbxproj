@@ -39,17 +39,9 @@
 		485CF30519368CB800E16756 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E719368CB800E16756 /* MagicalRecord+ShorthandSupport.m */; };
 		485CF30619368CB800E16756 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E919368CB800E16756 /* MagicalRecord.m */; };
 		485CF30B19368CCF00E16756 /* MBStoreCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF30A19368CCF00E16756 /* MBStoreCheck.m */; };
+		48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A4551B1933A8E6001B7173 /* iPhone568.storyboard */; };
 		48A4551F1933A9F0001B7173 /* SHStashAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A4551E1933A9F0001B7173 /* SHStashAPI.m */; };
 		48A8DE2D193650F90091A515 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		D62B9FAF1935513D0009AB33 /* Glowing_Browse_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D62B9FAE1935513D0009AB33 /* Glowing_Browse_Button.png */; };
-		D62B9FB1193551450009AB33 /* Stash_Logo_And_Tagline.png in Resources */ = {isa = PBXBuildFile; fileRef = D62B9FB0193551450009AB33 /* Stash_Logo_And_Tagline.png */; };
-		D62B9FB3193551500009AB33 /* Update_Add_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D62B9FB2193551500009AB33 /* Update_Add_Button.png */; };
-		D62B9FB5193551560009AB33 /* Update_Browse_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D62B9FB4193551560009AB33 /* Update_Browse_Button.png */; };
-		D64251D619365525007A03BE /* SHTitleTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251D419365525007A03BE /* SHTitleTipsViewController.m */; };
-		D64251D719365525007A03BE /* SHTitleTipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64251D519365525007A03BE /* SHTitleTipsViewController.xib */; };
-		D64251E6193685AE007A03BE /* iPhone568.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64251E5193685AE007A03BE /* iPhone568.storyboard */; };
-		D64251E919368E7B007A03BE /* SHCollectionPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251E819368E7B007A03BE /* SHCollectionPopoverViewController.m */; };
-		D64251EC19368F40007A03BE /* SHCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D64251EB19368F40007A03BE /* SHCategoryCollectionViewCell.m */; };
 		D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */; };
 		D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF181935287E000A312C /* SHAddPitchViewController.m */; };
 		D6FAFF1E19352A62000A312C /* SHAddTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */; };
@@ -60,6 +52,7 @@
 		D788E72A1933A5AB002D59B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E7291933A5AB002D59B5 /* Foundation.framework */; };
 		D788E72C1933A5AB002D59B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */; };
 		D788E72E1933A5AB002D59B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72D1933A5AB002D59B5 /* UIKit.framework */; };
+		D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D788E7321933A5AB002D59B5 /* InfoPlist.strings */; };
 		D788E7361933A5AB002D59B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E7351933A5AB002D59B5 /* main.m */; };
 		D788E73A1933A5AB002D59B5 /* SHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E7391933A5AB002D59B5 /* SHAppDelegate.m */; };
 		D788E73C1933A5AB002D59B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D788E73B1933A5AB002D59B5 /* Images.xcassets */; };
@@ -147,6 +140,7 @@
 		485CF2EC19368CB800E16756 /* MagicalRecordVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordVersion.h; sourceTree = "<group>"; };
 		485CF30919368CCF00E16756 /* MBStoreCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBStoreCheck.h; sourceTree = "<group>"; };
 		485CF30A19368CCF00E16756 /* MBStoreCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBStoreCheck.m; sourceTree = "<group>"; };
+		48A4551B1933A8E6001B7173 /* iPhone568.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone568.storyboard; sourceTree = "<group>"; };
 		48A4551D1933A9F0001B7173 /* SHStashAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStashAPI.h; sourceTree = "<group>"; };
 		48A4551E1933A9F0001B7173 /* SHStashAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStashAPI.m; sourceTree = "<group>"; };
 		48D15F711933BB280010B633 /* SHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConstants.h; sourceTree = "<group>"; };
@@ -157,14 +151,6 @@
 		D62B9FB4193551560009AB33 /* Update_Browse_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Update_Browse_Button.png; sourceTree = "<group>"; };
 		D64251CA1936465F007A03BE /* SHBrowseIdeasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBrowseIdeasViewController.h; sourceTree = "<group>"; };
 		D64251CB1936465F007A03BE /* SHBrowseIdeasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBrowseIdeasViewController.m; sourceTree = "<group>"; };
-		D64251D319365525007A03BE /* SHTitleTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTitleTipsViewController.h; sourceTree = "<group>"; };
-		D64251D419365525007A03BE /* SHTitleTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTitleTipsViewController.m; sourceTree = "<group>"; };
-		D64251D519365525007A03BE /* SHTitleTipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTitleTipsViewController.xib; sourceTree = "<group>"; };
-		D64251E5193685AE007A03BE /* iPhone568.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone568.storyboard; sourceTree = "<group>"; };
-		D64251E719368E7B007A03BE /* SHCollectionPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionPopoverViewController.h; sourceTree = "<group>"; };
-		D64251E819368E7B007A03BE /* SHCollectionPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCollectionPopoverViewController.m; sourceTree = "<group>"; };
-		D64251EA19368F40007A03BE /* SHCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCategoryCollectionViewCell.h; sourceTree = "<group>"; };
-		D64251EB19368F40007A03BE /* SHCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMarkCircle.png; sourceTree = "<group>"; };
 		D6FAFF171935287E000A312C /* SHAddPitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAddPitchViewController.h; sourceTree = "<group>"; };
 		D6FAFF181935287E000A312C /* SHAddPitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAddPitchViewController.m; sourceTree = "<group>"; };
@@ -373,47 +359,25 @@
 			name = StashAPI;
 			sourceTree = "<group>";
 		};
-		D64251CD1936546A007A03BE /* xib Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
-				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
-				D64251D319365525007A03BE /* SHTitleTipsViewController.h */,
-				D64251D419365525007A03BE /* SHTitleTipsViewController.m */,
-			);
-			name = "xib Controllers";
-			sourceTree = "<group>";
-		};
-		D64251ED19368F50007A03BE /* Popover Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D64251E719368E7B007A03BE /* SHCollectionPopoverViewController.h */,
-				D64251E819368E7B007A03BE /* SHCollectionPopoverViewController.m */,
-				D64251EA19368F40007A03BE /* SHCategoryCollectionViewCell.h */,
-				D64251EB19368F40007A03BE /* SHCategoryCollectionViewCell.m */,
-			);
-			name = "Popover Controllers";
-			sourceTree = "<group>";
-		};
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D6FAFF2C19354535000A312C /* SHRootViewController.h */,
-				D6FAFF2D19354535000A312C /* SHRootViewController.m */,
-				D64251C7193645C8007A03BE /* SHHomeViewController.h */,
-				D64251C8193645C8007A03BE /* SHHomeViewController.m */,
 				480C245B1935240900678499 /* SHEditViewController.h */,
 				480C245C1935240900678499 /* SHEditViewController.m */,
+				485CF2AD19367BD500E16756 /* SHHomeViewController.h */,
+				485CF2AE19367BD500E16756 /* SHHomeViewController.m */,
+				D6FAFF2C19354535000A312C /* SHRootViewController.h */,
+				D6FAFF2D19354535000A312C /* SHRootViewController.m */,
 				D6FAFF171935287E000A312C /* SHAddPitchViewController.h */,
 				D6FAFF181935287E000A312C /* SHAddPitchViewController.m */,
 				D6FAFF1C19352A62000A312C /* SHAddTitleViewController.h */,
 				D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */,
 				D6FAFF1F19352AA3000A312C /* SHAddCategoryViewController.h */,
 				D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */,
+				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
+				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
 				D64251CA1936465F007A03BE /* SHBrowseIdeasViewController.h */,
 				D64251CB1936465F007A03BE /* SHBrowseIdeasViewController.m */,
-				D64251ED19368F50007A03BE /* Popover Controllers */,
-				D64251CD1936546A007A03BE /* xib Controllers */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -421,9 +385,8 @@
 		D6FAFF1B193528A2000A312C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D64251E5193685AE007A03BE /* iPhone568.storyboard */,
+				48A4551B1933A8E6001B7173 /* iPhone568.storyboard */,
 				D6FAFF2919352F1E000A312C /* SHPitchTipsViewController.xib */,
-				D64251D519365525007A03BE /* SHTitleTipsViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -590,14 +553,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62B9FB3193551500009AB33 /* Update_Add_Button.png in Resources */,
-				D62B9FB3193551500009AB33 /* Update_Add_Button.png in Resources */,
-				D62B9FAF1935513D0009AB33 /* Glowing_Browse_Button.png in Resources */,
-				D62B9FB5193551560009AB33 /* Update_Browse_Button.png in Resources */,
-				D64251D719365525007A03BE /* SHTitleTipsViewController.xib in Resources */,
+				48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */,
+				D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */,
 				D6FAFF16193526EE000A312C /* QuestionMarkCircle.png in Resources */,
-				D62B9FB1193551450009AB33 /* Stash_Logo_And_Tagline.png in Resources */,
-				D64251E6193685AE007A03BE /* iPhone568.storyboard in Resources */,
 				D6FAFF2B19352F1E000A312C /* SHPitchTipsViewController.xib in Resources */,
 				D788E73C1933A5AB002D59B5 /* Images.xcassets in Resources */,
 			);
@@ -618,9 +576,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D64251EC19368F40007A03BE /* SHCategoryCollectionViewCell.m in Sources */,
-				D64251D619365525007A03BE /* SHTitleTipsViewController.m in Sources */,
-				D64251E919368E7B007A03BE /* SHCollectionPopoverViewController.m in Sources */,
 				D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */,
 				D6FAFF2119352AA3000A312C /* SHAddCategoryViewController.m in Sources */,
 				485CF30319368CB800E16756 /* MagicalRecord+Options.m in Sources */,

@@ -13,6 +13,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *stashItButton;
 @property (weak, nonatomic) IBOutlet UILabel *titleTextLabel;
 @property (weak, nonatomic) IBOutlet UITextView *pitchTextView;
-@property (weak, nonatomic) IBOutlet UIButton *pickCategoryButton;
 
 @end
