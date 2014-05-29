@@ -22,4 +22,11 @@
     _PitchTipsLabel.textAlignment = UITextLayoutDirectionUp;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSLog(@"Pitch loaded...");
+}
+
 @end

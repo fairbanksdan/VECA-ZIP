@@ -19,6 +19,11 @@
     [super viewDidLoad];
 }
 
-
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSLog(@"Add Category loaded...");
+}
 
 @end
