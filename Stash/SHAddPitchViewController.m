@@ -11,6 +11,7 @@
 @interface SHAddPitchViewController () <UITextFieldDelegate>
 
 - (void)didSaveToCoreData;
+- (IBAction)trashStashButtonSelected:(id)sender;
 
 @end
 
@@ -31,6 +32,7 @@
 {
     [super viewDidAppear:animated];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didSaveToCoreData) name:NSManagedObjectContextDidSaveNotification object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didSaveToCoreData) name:kTrashStashButtonSelected object:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -42,6 +44,11 @@
 - (void)didSaveToCoreData
 {
     self.pitchTextField.text = nil;
+}
+
+- (IBAction)trashStashButtonSelected:(id)sender
+{
+    [[NSNotificationCenter defaultCenter]postNotificationName:kTrashStashButtonSelected object:nil];
 }
 
 @end

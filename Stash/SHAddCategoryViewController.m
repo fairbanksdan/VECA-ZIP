@@ -12,6 +12,7 @@
 @interface SHAddCategoryViewController ()
 
 - (IBAction)stashITButtonSelected:(UIButton *)sender;
+- (IBAction)trashStashButtonSelected:(id)sender;
 
 @end
 
@@ -50,6 +51,11 @@
                          cancelButtonTitle:@"OK"
                          otherButtonTitles:nil, nil]show];
     }
+}
+
+- (IBAction)trashStashButtonSelected:(id)sender
+{
+    [[NSNotificationCenter defaultCenter]postNotificationName:kTrashStashButtonSelected object:nil];
 }
 
 @end

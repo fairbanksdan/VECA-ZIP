@@ -11,6 +11,7 @@
 @interface SHAddTitleViewController ()
 
 - (void)didSaveToCoreData;
+- (IBAction)trashStashButtonSelected:(id)sender;
 
 @end
 
@@ -39,6 +40,11 @@
 {
     self.titleTextField.text = nil;
     self.pitchTextView.text = nil;
+}
+
+- (IBAction)trashStashButtonSelected:(id)sender
+{
+    [[NSNotificationCenter defaultCenter]postNotificationName:kTrashStashButtonSelected object:nil];
 }
 
 @end

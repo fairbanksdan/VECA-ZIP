@@ -103,6 +103,9 @@
                                     <color key="titleColor" red="0.40939414410000002" green="0.85702327810000001" blue="0.38662327549999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="trashStashButtonSelected:" destination="00k-v7-ePb" eventType="touchUpInside" id="mTa-dx-jzB"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBw-rG-vwL">
                                 <rect key="frame" x="42" y="103" width="237" height="200"/>
@@ -169,6 +172,9 @@
                                     <color key="titleColor" red="0.40939414410000002" green="0.85702327810000001" blue="0.38662327549999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="trashStashButtonSelected:" destination="lSc-LA-Tjd" eventType="touchUpInside" id="cpe-47-ZEF"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="My app will save the world..." translatesAutoresizingMaskIntoConstraints="NO" id="jr8-cU-5oo">
                                 <rect key="frame" x="40" y="164" width="240" height="240"/>
@@ -243,6 +249,9 @@
                                     <color key="titleColor" red="0.40939414410000002" green="0.85702327810000001" blue="0.38662327549999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="trashStashButtonSelected:" destination="qxL-Y0-EJX" eventType="touchUpInside" id="TuL-Nw-Uto"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="My app will save the world..." translatesAutoresizingMaskIntoConstraints="NO" id="3h7-JQ-LHw">
                                 <rect key="frame" x="40" y="264" width="240" height="240"/>
