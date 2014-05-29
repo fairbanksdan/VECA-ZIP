@@ -10,7 +10,7 @@
 #import "CoreData+MagicalRecord.h"
 #import "SHStash.h"
 
-@interface SHAddPitchViewController ()
+@interface SHAddPitchViewController () <UITextFieldDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) SHStash *stash;
 
@@ -37,6 +37,12 @@
 {
     [super viewDidDisappear:animated];
     NSLog(@"AddPitch view did dissapear...");
+    [_pitchTextField resignFirstResponder];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.pitchTextField resignFirstResponder];
 }
 
 @end
