@@ -7,8 +7,11 @@
 //
 
 #import "SHAddCategoryViewController.h"
+#import "SHStash+Manage.h"
 
 @interface SHAddCategoryViewController ()
+
+- (IBAction)stashITButtonSelected:(UIButton *)sender;
 
 @end
 
@@ -28,6 +31,13 @@
 {
     [super viewDidDisappear:animated];
     [[[SHStashCloud sharedCloud]stash]setCategory:@"Music"];
+}
+
+#pragma mark - Action Methods
+
+- (IBAction)stashITButtonSelected:(UIButton *)sender
+{
+    [[[SHStashCloud sharedCloud]stash]saveStash];
 }
 
 @end

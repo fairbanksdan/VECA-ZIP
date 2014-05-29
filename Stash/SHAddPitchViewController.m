@@ -26,6 +26,11 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    NSArray *results = [SHStash findAll];
+    for (SHStash *stash in results) {
+        NSLog(@"%@", stash.title);
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
