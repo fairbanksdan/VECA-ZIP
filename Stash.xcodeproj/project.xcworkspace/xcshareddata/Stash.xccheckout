@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>714C9F41-74DB-493E-B036-955313137217</string>
+	<string>BB338622-2431-4F24-938C-B102F5D73A7C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Stash</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>18590017-36C7-4B8B-A776-1104E2034258</key>
-		<string>ssh://github.com/michaelbabiy/Stash.git</string>
+		<key>0AC6E29D-7152-4622-9986-FD1D3AEE6D62</key>
+		<string>ssh://github.com/fairbanksdan/Stash.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Stash.xcodeproj/project.xcworkspace</string>
+	<string>Stash/Stash.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>18590017-36C7-4B8B-A776-1104E2034258</key>
-		<string>../..</string>
+		<key>0AC6E29D-7152-4622-9986-FD1D3AEE6D62</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/michaelbabiy/Stash.git</string>
+	<string>ssh://github.com/fairbanksdan/Stash.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>18590017-36C7-4B8B-A776-1104E2034258</string>
+	<string>0AC6E29D-7152-4622-9986-FD1D3AEE6D62</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>18590017-36C7-4B8B-A776-1104E2034258</string>
+			<string>0AC6E29D-7152-4622-9986-FD1D3AEE6D62</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Stash</string>
 		</dict>
