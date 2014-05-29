@@ -43,6 +43,9 @@
                                 <state key="normal" image="Update_Add_Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addStashButtonSelected:" destination="WGJ-v1-y10" eventType="touchUpInside" id="5OX-Ym-LGf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGr-uF-kCd">
                                 <rect key="frame" x="98" y="384" width="120" height="120"/>

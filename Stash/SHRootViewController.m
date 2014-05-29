@@ -43,11 +43,11 @@
     
     self.storyBoard = [UIStoryboard storyboardWithName:@"iPhone568" bundle:nil];
     
-    
     [self setupInitialViewControllers];
     
     [_fgScrollView setContentOffset:CGPointMake(640, 0) animated:NO];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(returnToHomeView) name:NSManagedObjectContextDidSaveNotification object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addNewStash) name:kAddStashButtonSelected object:nil];
 }
 
 -(void)setupInitialViewControllers
@@ -166,6 +166,19 @@
 - (void)returnToHomeView
 {
     [self.fgScrollView setContentOffset:CGPointMake(SH_HOME_VIEW_CONTROLLER, 0.0) animated:YES];
+}
+
+- (void)addNewStash
+{
+    [self.fgScrollView setContentOffset:CGPointMake(SH_ADD_PITCH_VIEW_CONTROLLER, 0.0) animated:YES];
+    
+    dispatch_queue_t waiQ = dispatch_queue_create("waitQ", NULL);
+    dispatch_async(waiQ, ^{
+        usleep(400000);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.addPitchViewController.pitchTextField becomeFirstResponder];
+        });
+    });
 }
 
 @end
