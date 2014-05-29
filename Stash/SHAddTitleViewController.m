@@ -22,18 +22,13 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.pitchTextView setText:[[[SHStashCloud sharedCloud]stash]text]];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
     [[[SHStashCloud sharedCloud]stash]setTitle:self.titleTextField.text];
-//    [self.titleTextField resignFirstResponder];
 }
-
-//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//    [self.titleTextField resignFirstResponder];
-//}
 
 @end

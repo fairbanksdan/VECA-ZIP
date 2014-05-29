@@ -25,6 +25,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.titleTextLabel setText:[[[SHStashCloud sharedCloud]stash]title]];
+    [self.pitchTextView setText:[[[SHStashCloud sharedCloud]stash]text]];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
