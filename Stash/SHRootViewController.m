@@ -99,25 +99,35 @@
     switch ((int) scrollView.contentOffset.x) {
         case SH_EDIT_VIEW_CONTROLLER:
             [self.editViewController viewDidAppear:YES];
+            [self.browseIdeasViewController viewDidDisappear:YES];
             break;
             
         case SH_BROWSE_VIEW_CONTROLLER:
+            [self.editViewController viewDidDisappear:YES];
             [self.browseIdeasViewController viewDidAppear:YES];
+            [self.homeViewController viewDidDisappear:YES];
             break;
             
         case SH_HOME_VIEW_CONTROLLER:
+            [self.browseIdeasViewController viewDidDisappear:YES];
             [self.homeViewController viewDidAppear:YES];
+            [self.addPitchViewController viewDidDisappear:YES];
             break;
             
         case SH_ADD_PITCH_VIEW_CONTROLLER:
+            [self.homeViewController viewDidDisappear:YES];
             [self.addPitchViewController viewDidAppear:YES];
+            [self.addTitleViewController viewDidDisappear:YES];
             break;
             
         case SH_ADD_TITLE_VIEW_CONTROLLER:
+            [self.addPitchViewController viewDidDisappear:YES];
             [self.addTitleViewController viewDidAppear:YES];
+            [self.addCategoryViewController viewDidDisappear:YES];
             break;
             
         case SH_ADD_CATEGORY_VIEW_CONTROLLER:
+            [self.addTitleViewController viewDidDisappear:YES];
             [self.addCategoryViewController viewDidAppear:YES];
             break;
             

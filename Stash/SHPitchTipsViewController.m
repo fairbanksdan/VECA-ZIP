@@ -29,4 +29,10 @@
     NSLog(@"Pitch loaded...");
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"PitchTips view did dissapear...");
+}
+
 @end

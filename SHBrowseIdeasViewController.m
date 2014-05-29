@@ -27,4 +27,10 @@
     NSLog(@"Browse loaded...");
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"BrowseIdeas view did dissapear...");
+}
+
 @end

@@ -26,4 +26,10 @@
     NSLog(@"Add Category loaded...");
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"AddCategory view did dissapear...");
+}
+
 @end
