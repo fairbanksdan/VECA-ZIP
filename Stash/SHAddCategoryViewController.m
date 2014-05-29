@@ -65,7 +65,7 @@
 
 - (IBAction)showCategoryPopover:(id)sender {
     _popoverVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PopoverCategoryVC"];
-    _popoverVC.view.frame = CGRectMake(0, 0, 300, 300);
+    _popoverVC.view.frame = CGRectMake(0, 0, 300, 420);
     _popoverVC.view.center = CGPointMake(self.view.center.x, self.view.center.y - 500);
     self.view.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.0];
     
