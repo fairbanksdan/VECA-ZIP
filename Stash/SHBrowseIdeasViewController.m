@@ -19,10 +19,11 @@
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    
+    NSLog(@"Browse Ideas loaded...");
 }
 
 @end

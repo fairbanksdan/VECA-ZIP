@@ -98,65 +98,32 @@
 {
     switch ((int) scrollView.contentOffset.x) {
         case SH_EDIT_VIEW_CONTROLLER:
-            [self.editViewController viewWillAppear:YES];
+            [self.editViewController viewDidAppear:YES];
             break;
             
         case SH_BROWSE_VIEW_CONTROLLER:
-            [self.browseIdeasViewController viewWillAppear:YES];
+            [self.browseIdeasViewController viewDidAppear:YES];
             break;
             
         case SH_HOME_VIEW_CONTROLLER:
-            [self.homeViewController viewWillAppear:YES];
+            [self.homeViewController viewDidAppear:YES];
             break;
             
         case SH_ADD_PITCH_VIEW_CONTROLLER:
-            [self.addPitchViewController viewWillAppear:YES];
+            [self.addPitchViewController viewDidAppear:YES];
             break;
             
         case SH_ADD_TITLE_VIEW_CONTROLLER:
-            [self.addTitleViewController viewWillAppear:YES];
+            [self.addTitleViewController viewDidAppear:YES];
             break;
             
         case SH_ADD_CATEGORY_VIEW_CONTROLLER:
-            [self.addCategoryViewController viewWillAppear:YES];
+            [self.addCategoryViewController viewDidAppear:YES];
             break;
             
         default:
             break;
     }
-}
-
-- (void)didPresentEditViewController
-{
-    NSLog(@"presented edit viewcontroller");
-    
-    
-}
-
-- (void)didPresentBrowseIdeasViewController
-{
-    NSLog(@"presented browse view controller");
-}
-
-- (void)didPresentHomeViewController
-{
-    NSLog(@"presented home view controller");
-}
-
-- (void)didPresentAddPitchViewController
-{
-    NSLog(@"presented pitch view controller");
-}
-
-- (void)didPresentAddTitleViewController
-{
-    NSLog(@"presented title view controller");
-}
-
-- (void)didPresentAddCategoryViewController
-{
-    NSLog(@"presented category view controller");
-    
 }
 
 -(BOOL)prefersStatusBarHidden

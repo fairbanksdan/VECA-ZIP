@@ -18,11 +18,11 @@
 
 @implementation SHEditViewController
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
     
-    NSLog(@"We have a liftoff...");
+    NSLog(@"Edit loaded...");
 }
 
 #pragma mark - Action Methods

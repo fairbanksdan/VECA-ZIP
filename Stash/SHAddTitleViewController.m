@@ -19,4 +19,11 @@
     [super viewDidLoad];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSLog(@"Add Title loaded...");
+}
+
 @end
