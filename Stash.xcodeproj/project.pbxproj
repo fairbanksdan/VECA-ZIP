@@ -406,20 +406,28 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		D6A2CE021937F1120034D397 /* Popover View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6A2CDFA1937EF080034D397 /* SHCollectionPopoverViewController.h */,
+				D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */,
+				D6A2CDFC1937EF080034D397 /* SHCategoryCollectionViewCell.h */,
+				D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */,
+			);
+			name = "Popover View Controllers";
+			sourceTree = "<group>";
+		};
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				4822BAA31937A46A007BEE49 /* Add Stash View Controllers */,
+				D6A2CE021937F1120034D397 /* Popover View Controllers */,
 				480C245B1935240900678499 /* SHEditViewController.h */,
 				480C245C1935240900678499 /* SHEditViewController.m */,
 				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
 				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
 				00E62AF719378BF9006AA5A8 /* SHBrowseIdeasViewController.h */,
 				00E62AF819378BF9006AA5A8 /* SHBrowseIdeasViewController.m */,
-				D6A2CDFA1937EF080034D397 /* SHCollectionPopoverViewController.h */,
-				D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */,
-				D6A2CDFC1937EF080034D397 /* SHCategoryCollectionViewCell.h */,
-				D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
