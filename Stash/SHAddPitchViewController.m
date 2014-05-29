@@ -19,7 +19,8 @@
     [super viewDidLoad];
 
     UIColor *color = [UIColor whiteColor];
-    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here" attributes:@{NSForegroundColorAttributeName: color}];
+    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
+                                                                            attributes:@{NSForegroundColorAttributeName:color}];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -30,6 +31,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+    [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
 }
 
 @end
