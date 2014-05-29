@@ -15,6 +15,7 @@
 		00EE139B1933D56B006A9DB7 /* SHStash.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE139A1933D56B006A9DB7 /* SHStash.m */; };
 		00EE139E1933D5F2006A9DB7 /* SHStash+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE139D1933D5F2006A9DB7 /* SHStash+Manage.m */; };
 		480C245D1935240900678499 /* SHEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480C245C1935240900678499 /* SHEditViewController.m */; };
+		4822BAA219379F90007BEE49 /* SHStashCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 4822BAA119379F90007BEE49 /* SHStashCloud.m */; };
 		485CF2AF19367BD500E16756 /* SHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2AE19367BD500E16756 /* SHHomeViewController.m */; };
 		485CF2ED19368CB800E16756 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2B419368CB800E16756 /* MagicalImportFunctions.m */; };
 		485CF2EE19368CB800E16756 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2B619368CB800E16756 /* NSAttributeDescription+MagicalDataImport.m */; };
@@ -89,6 +90,8 @@
 		00EE139D1933D5F2006A9DB7 /* SHStash+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHStash+Manage.m"; sourceTree = "<group>"; };
 		480C245B1935240900678499 /* SHEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHEditViewController.h; sourceTree = "<group>"; };
 		480C245C1935240900678499 /* SHEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHEditViewController.m; sourceTree = "<group>"; };
+		4822BAA019379F90007BEE49 /* SHStashCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStashCloud.h; sourceTree = "<group>"; };
+		4822BAA119379F90007BEE49 /* SHStashCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStashCloud.m; sourceTree = "<group>"; };
 		485CF2AD19367BD500E16756 /* SHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHomeViewController.h; sourceTree = "<group>"; };
 		485CF2AE19367BD500E16756 /* SHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHomeViewController.m; sourceTree = "<group>"; };
 		485CF2B319368CB800E16756 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				00EE139A1933D56B006A9DB7 /* SHStash.m */,
 				00EE139C1933D5F2006A9DB7 /* SHStash+Manage.h */,
 				00EE139D1933D5F2006A9DB7 /* SHStash+Manage.m */,
+				4822BAA019379F90007BEE49 /* SHStashCloud.h */,
+				4822BAA119379F90007BEE49 /* SHStashCloud.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -607,6 +612,7 @@
 				485CF2AF19367BD500E16756 /* SHHomeViewController.m in Sources */,
 				485CF2F519368CB800E16756 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				485CF30119368CB800E16756 /* MagicalRecord+ErrorHandling.m in Sources */,
+				4822BAA219379F90007BEE49 /* SHStashCloud.m in Sources */,
 				485CF2F719368CB800E16756 /* NSManagedObject+MagicalRecord.m in Sources */,
 				485CF2FB19368CB800E16756 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				485CF2F019368CB800E16756 /* NSNumber+MagicalDataImport.m in Sources */,
