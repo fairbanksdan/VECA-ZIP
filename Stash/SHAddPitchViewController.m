@@ -14,6 +14,13 @@
 
 @implementation SHAddPitchViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"Add pitch...");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

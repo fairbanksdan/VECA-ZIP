@@ -21,3 +21,10 @@ static NSString * const kApplicationIDKey = @"X-Parse-Application-Id";
 static NSString * const kRESTAPIKey = @"X-Parse-REST-API-Key";
 
 static NSString * const kStashAPIURL = @"https://api.parse.com/1/classes/Stash";
+
+#define SH_EDIT_VIEW_CONTROLLER 0
+#define SH_BROWSE_VIEW_CONTROLLER 320
+#define SH_HOME_VIEW_CONTROLLER 640
+#define SH_ADD_PITCH_VIEW_CONTROLLER 960
+#define SH_ADD_TITLE_VIEW_CONTROLLER 1280
+#define SH_ADD_CATEGORY_VIEW_CONTROLLER 1600
