@@ -31,6 +31,8 @@
 @property (weak, nonatomic) IBOutlet UIView *addCategoryVCContainer;
 @property (nonatomic, strong) SHAddCategoryViewController *addCategoryViewController;
 
+- (void)returnToHomeView;
+
 @end
 
 @implementation SHRootViewController
@@ -45,6 +47,7 @@
     [self setupInitialViewControllers];
     
     [_fgScrollView setContentOffset:CGPointMake(640, 0) animated:NO];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(returnToHomeView) name:NSManagedObjectContextDidSaveNotification object:nil];
 }
 
 -(void)setupInitialViewControllers
@@ -109,8 +112,6 @@
     
 }
 
-
-
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     switch ((int) scrollView.contentOffset.x) {
@@ -158,6 +159,13 @@
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+#pragma mark - Notifications
+
+- (void)returnToHomeView
+{
+    [self.fgScrollView setContentOffset:CGPointMake(SH_HOME_VIEW_CONTROLLER, 0.0) animated:YES];
 }
 
 @end
