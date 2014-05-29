@@ -22,14 +22,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    NSLog(@"Add Title loaded...");
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    NSLog(@"AddTitle view did dissapear...");
+    [[[SHStashCloud sharedCloud]stash]setTitle:self.titleTextField.text];
 }
 
 @end

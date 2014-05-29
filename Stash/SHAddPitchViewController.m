@@ -7,12 +7,8 @@
 //
 
 #import "SHAddPitchViewController.h"
-#import "CoreData+MagicalRecord.h"
-#import "SHStash.h"
 
 @interface SHAddPitchViewController ()
-
-@property (strong, nonatomic) SHStash *stash;
 
 @end
 
@@ -23,20 +19,24 @@
     [super viewDidLoad];
 
     UIColor *color = [UIColor whiteColor];
-    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here" attributes:@{NSForegroundColorAttributeName: color}];
+    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
+                                                                            attributes:@{NSForegroundColorAttributeName:color}];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    self.stash = [SHStash createEntity];
+    NSArray *results = [SHStash findAll];
+    for (SHStash *stash in results) {
+        NSLog(@"%@", stash.title);
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    NSLog(@"AddPitch view did dissapear...");
+    [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
 }
 
 @end
