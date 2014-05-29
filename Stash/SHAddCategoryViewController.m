@@ -7,8 +7,11 @@
 //
 
 #import "SHAddCategoryViewController.h"
+#import "SHStash+Manage.h"
 
 @interface SHAddCategoryViewController ()
+
+- (IBAction)stashITButtonSelected:(UIButton *)sender;
 
 @end
 
@@ -22,14 +25,19 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    NSLog(@"Add Category loaded...");
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    NSLog(@"AddCategory view did dissapear...");
+    [[[SHStashCloud sharedCloud]stash]setCategory:@"Music"];
+}
+
+#pragma mark - Action Methods
+
+- (IBAction)stashITButtonSelected:(UIButton *)sender
+{
+    [[[SHStashCloud sharedCloud]stash]saveStash];
 }
 
 @end

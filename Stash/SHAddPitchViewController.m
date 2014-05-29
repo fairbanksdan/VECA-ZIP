@@ -7,12 +7,8 @@
 //
 
 #import "SHAddPitchViewController.h"
-#import "CoreData+MagicalRecord.h"
-#import "SHStash.h"
 
-@interface SHAddPitchViewController () <UITextFieldDelegate, UIScrollViewDelegate>
-
-@property (strong, nonatomic) SHStash *stash;
+@interface SHAddPitchViewController () <UITextFieldDelegate>
 
 @end
 
@@ -23,26 +19,34 @@
     [super viewDidLoad];
 
     UIColor *color = [UIColor whiteColor];
-    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here" attributes:@{NSForegroundColorAttributeName: color}];
+    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
+                                                                            attributes:@{NSForegroundColorAttributeName:color}];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    self.stash = [SHStash createEntity];
+    NSArray *results = [SHStash findAll];
+    for (SHStash *stash in results) {
+        NSLog(@"%@", stash.title);
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    NSLog(@"AddPitch view did dissapear...");
-    [_pitchTextField resignFirstResponder];
+    [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
+    
+//    [self.pitchTextField resignFirstResponder];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [self.pitchTextField resignFirstResponder];
-}
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [self.pitchTextField resignFirstResponder];
+//}
+
+
+
 
 @end

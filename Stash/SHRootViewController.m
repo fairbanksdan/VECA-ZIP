@@ -92,7 +92,24 @@
     {
         [_bgScrollView setContentOffset:CGPointMake(_fgScrollView.contentOffset.x * 0.25, _fgScrollView.contentOffset.y) animated:NO];
     }
+    
+//    NSLog(@" %f",scrollView.contentOffset.x);
+    
+    //resigns pitch textfield when scrolling on addPitchVC
+    if (scrollView.contentOffset.x < 950 && scrollView.contentOffset.x > 860)
+    {
+        [self.addPitchViewController.pitchTextField resignFirstResponder];
+    }
+    
+    if (scrollView.contentOffset.x < 1380 && scrollView.contentOffset.x > 1290)
+    {
+        [self.addTitleViewController.titleTextField resignFirstResponder];
+    }
+    
+    
 }
+
+
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
@@ -118,12 +135,14 @@
             [self.homeViewController viewDidDisappear:YES];
             [self.addPitchViewController viewDidAppear:YES];
             [self.addTitleViewController viewDidDisappear:YES];
+            [self.addPitchViewController.pitchTextField becomeFirstResponder];
             break;
             
         case SH_ADD_TITLE_VIEW_CONTROLLER:
             [self.addPitchViewController viewDidDisappear:YES];
             [self.addTitleViewController viewDidAppear:YES];
             [self.addCategoryViewController viewDidDisappear:YES];
+            [self.addTitleViewController.titleTextField becomeFirstResponder];
             break;
             
         case SH_ADD_CATEGORY_VIEW_CONTROLLER:
