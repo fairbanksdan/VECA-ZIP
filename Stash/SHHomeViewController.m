@@ -22,8 +22,13 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     NSLog(@"Home loaded...");
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"Home view did dissapear...");
 }
 
 @end

@@ -26,4 +26,10 @@
     NSLog(@"Add Title loaded...");
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"AddTitle view did dissapear...");
+}
+
 @end
