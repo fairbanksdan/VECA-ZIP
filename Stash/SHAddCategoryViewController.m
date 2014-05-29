@@ -40,6 +40,9 @@
 - (IBAction)stashITButtonSelected:(UIButton *)sender
 {
     [[[SHStashCloud sharedCloud]stash]saveStash];
+    
+    [[[SHStashCloud sharedCloud]stash]setTitle:nil];
+    [[[SHStashCloud sharedCloud]stash]setText:nil];
 }
 
 @end
