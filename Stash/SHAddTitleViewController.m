@@ -28,6 +28,12 @@
 {
     [super viewDidDisappear:animated];
     [[[SHStashCloud sharedCloud]stash]setTitle:self.titleTextField.text];
+//    [self.titleTextField resignFirstResponder];
 }
+
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [self.titleTextField resignFirstResponder];
+//}
 
 @end

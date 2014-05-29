@@ -28,3 +28,4 @@ static NSString * const kStashAPIURL = @"https://api.parse.com/1/classes/Stash";
 #define SH_ADD_PITCH_VIEW_CONTROLLER 960
 #define SH_ADD_TITLE_VIEW_CONTROLLER 1280
 #define SH_ADD_CATEGORY_VIEW_CONTROLLER 1600
+#define IS_IPHONE_5 (fabs((double)[[UIScreen mainScreen]bounds].size.height - (double)568) < DBL_EPSILON)

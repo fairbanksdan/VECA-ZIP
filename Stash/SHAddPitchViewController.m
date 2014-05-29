@@ -8,7 +8,7 @@
 
 #import "SHAddPitchViewController.h"
 
-@interface SHAddPitchViewController ()
+@interface SHAddPitchViewController () <UITextFieldDelegate>
 
 @end
 
@@ -37,6 +37,16 @@
 {
     [super viewDidDisappear:animated];
     [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
+    
+//    [self.pitchTextField resignFirstResponder];
 }
+
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [self.pitchTextField resignFirstResponder];
+//}
+
+
+
 
 @end
