@@ -38,7 +38,6 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [[[SHStashCloud sharedCloud]stash]setCategory:@"Music"];
 }
 
 #pragma mark - Action Methods
@@ -108,7 +107,9 @@
                          [_snapShotView removeFromSuperview];
                          _snapShotView = nil;
                          _popoverVC = nil;
-                         NSLog(@"Selected: %@", category.name);
+                         
+                         // Setting the category for the stash.
+                         [[[SHStashCloud sharedCloud]stash]setCategory:category.name];
                      }];
     
 }
