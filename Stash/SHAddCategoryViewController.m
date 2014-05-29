@@ -39,10 +39,17 @@
 
 - (IBAction)stashITButtonSelected:(UIButton *)sender
 {
-    [[[SHStashCloud sharedCloud]stash]saveStash];
-    
-    [[[SHStashCloud sharedCloud]stash]setTitle:nil];
-    [[[SHStashCloud sharedCloud]stash]setText:nil];
+    if ([[[[SHStashCloud sharedCloud]stash]title]length] && [[[[SHStashCloud sharedCloud]stash]text]length]) {
+        [[[SHStashCloud sharedCloud]stash]saveStash];
+        [[[SHStashCloud sharedCloud]stash]setTitle:nil];
+        [[[SHStashCloud sharedCloud]stash]setText:nil];
+    } else {
+        [[[UIAlertView alloc]initWithTitle:@"Hold on..."
+                                   message:@"You need to have both the title and the idea text entered before you can save."
+                                  delegate:nil
+                         cancelButtonTitle:@"OK"
+                         otherButtonTitles:nil, nil]show];
+    }
 }
 
 @end
