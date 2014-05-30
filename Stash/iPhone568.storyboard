@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BEc-cv-C5X">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -531,24 +531,25 @@
                         <viewControllerLayoutGuide type="top" id="R91-oY-CXy"/>
                         <viewControllerLayoutGuide type="bottom" id="89L-9h-Otn"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="Sg6-Ew-w7p">
-                        <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+                    <view key="view" contentMode="scaleToFill" id="Sg6-Ew-w7p">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="420"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq2-WY-ks3">
-                                <rect key="frame" x="5" y="5" width="250" height="290"/>
+                                <rect key="frame" x="5" y="5" width="290" height="410"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Pretend you stepped into an elevator and an Angel investor walked in. You only had 45 seconds to pitch your idea to him/her. What would you say?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="260" height="300"/>
+                    <size key="freeformSize" width="300" height="420"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sH-aa-Llc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

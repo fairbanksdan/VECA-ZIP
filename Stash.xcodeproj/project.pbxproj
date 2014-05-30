@@ -540,9 +540,9 @@
 		D7CE7A9319380D53003E4C15 /* Stash Idea */ = {
 			isa = PBXGroup;
 			children = (
-				D6A2CE021937F1120034D397 /* Select Category */,
 				D6FAFF1F19352AA3000A312C /* SHAddCategoryViewController.h */,
 				D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */,
+				D6A2CE021937F1120034D397 /* Select Category */,
 			);
 			name = "Stash Idea";
 			sourceTree = "<group>";

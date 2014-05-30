@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SHPitchTipsViewControllerDelegate <NSObject>
+
+@end
+
 @interface SHPitchTipsViewController : UIViewController
+
+@property (nonatomic, unsafe_unretained) id<SHPitchTipsViewControllerDelegate> delegate;
 
 @end
