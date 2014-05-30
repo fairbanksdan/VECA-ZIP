@@ -109,6 +109,7 @@
                          _popoverVC = nil;
                          
                          // Setting the category for the stash.
+                       
                          [[[SHStashCloud sharedCloud]stash]setCategory:category.name];
                      }];
     

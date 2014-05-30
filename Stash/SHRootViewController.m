@@ -170,6 +170,7 @@
 - (void)returnToHomeView
 {
     [self.fgScrollView setContentOffset:CGPointMake(SH_HOME_VIEW_CONTROLLER, 0.0) animated:YES];
+    [self.browseIdeasViewController.collectionView reloadData];
 }
 
 - (void)moveToBrowseView

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SHBrowseIdeasViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end
