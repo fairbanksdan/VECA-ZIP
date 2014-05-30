@@ -7,9 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SHRootViewController.h"
 
 @interface StashTests : XCTestCase
-
+@property (nonatomic, strong) SHRootViewController *rootVC;
 @end
 
 @implementation StashTests
@@ -17,7 +18,9 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPhone568" bundle:nil];
+    self.rootVC = [storyboard instantiateViewControllerWithIdentifier:@"RootViewController"];
+    [self.rootVC performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
 }
 
 - (void)tearDown
@@ -26,9 +29,8 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testIfUserCanScroll
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertNotNil(_rootVC.bgScrollView, @"Background scrollview should not be nil");
 }
-
 @end

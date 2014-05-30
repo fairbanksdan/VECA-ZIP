@@ -17,7 +17,6 @@
 @interface SHRootViewController () <UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIStoryboard *storyBoard;
-@property (nonatomic, weak) IBOutlet UIScrollView *bgScrollView, *fgScrollView;
 @property (weak, nonatomic) IBOutlet UIView *editVCContainer;
 @property (nonatomic, strong) SHEditViewController *editViewController;
 @property (weak, nonatomic) IBOutlet UIView *browseVCContainer;
@@ -92,6 +91,8 @@
     [self addChildViewController:self.addCategoryViewController];
     [self.addCategoryViewController didMoveToParentViewController:self];
 }
+
+
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
