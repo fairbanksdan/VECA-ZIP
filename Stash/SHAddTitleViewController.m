@@ -20,6 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([self.titleTextField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.7];
+        self.titleTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter title..." attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -25,13 +25,13 @@
 {
     [super viewDidLoad];
 
-    UIColor *color = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
+//    UIColor *color = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
 
-    _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
-                                                                            attributes:@{NSForegroundColorAttributeName:color}];
+//    _pitchTextView.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
+//                                                                            attributes:@{NSForegroundColorAttributeName:color}];
     
-    _pitchTextField.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
-    _pitchTextField.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.2];
+    _pitchTextView.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
+    _pitchTextView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.2];
 
     
 }
@@ -46,12 +46,12 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextField.text];
+    [[[SHStashCloud sharedCloud]stash]setText:self.pitchTextView.text];
 }
 
 - (void)didSaveToCoreData
 {
-    self.pitchTextField.text = nil;
+    self.pitchTextView.text = nil;
 }
 
 - (IBAction)trashStashButtonSelected:(id)sender
@@ -61,6 +61,8 @@
 
 - (IBAction)showHint:(id)sender
 {
+    
+    
     _popoverVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PopoverVC"];
 
     UIButton *dismissButton = [[UIButton alloc] initWithFrame:_popoverVC.view.bounds];

@@ -105,7 +105,7 @@
     //resigns pitch textfield when scrolling on addPitchVC
     if (scrollView.contentOffset.x < 950 && scrollView.contentOffset.x > 860)
     {
-        [self.addPitchViewController.pitchTextField resignFirstResponder];
+        [self.addPitchViewController.pitchTextView resignFirstResponder];
     }
     
     if (scrollView.contentOffset.x < 1380 && scrollView.contentOffset.x > 1290)
@@ -140,7 +140,7 @@
             [self.homeViewController viewDidDisappear:YES];
             [self.addPitchViewController viewDidAppear:YES];
             [self.addTitleViewController viewDidDisappear:YES];
-            [self.addPitchViewController.pitchTextField becomeFirstResponder];
+            [self.addPitchViewController.pitchTextView becomeFirstResponder];
             break;
             
         case SH_ADD_TITLE_VIEW_CONTROLLER:
@@ -185,7 +185,7 @@
     dispatch_async(waiQ, ^{
         usleep(400000);
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.addPitchViewController.pitchTextField becomeFirstResponder];
+            [self.addPitchViewController.pitchTextView becomeFirstResponder];
         });
     });
 }

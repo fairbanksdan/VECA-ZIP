@@ -13,6 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *trashItButton;
 @property (weak, nonatomic) IBOutlet UIButton *pitchTipsHelpButton;
-@property (weak, nonatomic) IBOutlet UITextField *pitchTextField;
+@property (weak, nonatomic) IBOutlet UITextView *pitchTextView;
 
 @end
