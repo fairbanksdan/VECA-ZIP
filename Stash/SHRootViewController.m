@@ -51,6 +51,8 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addNewStash) name:kAddStashButtonSelected object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(trashStash) name:kTrashStashButtonSelected object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(moveToBrowseView) name:kBrowseButtonSelected object:nil];
+    
+    _fgScrollView.userInteractionEnabled = [[SHStash findAllSortedBy:@"date" ascending:YES] count];
 }
 
 -(void)setupInitialViewControllers
