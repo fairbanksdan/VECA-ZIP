@@ -25,10 +25,14 @@
 {
     [super viewDidLoad];
 
-    UIColor *color = [UIColor whiteColor];
+    UIColor *color = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
+
     _pitchTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Enter the pitch for your idea here"
                                                                             attributes:@{NSForegroundColorAttributeName:color}];
     
+    _pitchTextField.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
+    _pitchTextField.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.2];
+
     
 }
 
@@ -58,24 +62,11 @@
 - (IBAction)showHint:(id)sender
 {
     _popoverVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PopoverVC"];
-//    UIViewController *popover = [self.storyboard instantiateViewControllerWithIdentifier:@"PopoverVC"];
-//    popover.view.bounds = CGRectMake(0, 0, 260, 300);
-//    popover.view.center = self.view.center;
-//    popover.view.alpha = 0.f;
+
     UIButton *dismissButton = [[UIButton alloc] initWithFrame:_popoverVC.view.bounds];
-    
-    //    popover.view.center = CGPointMake(self.view.center.x, self.view.frame.size.height);
     
     [self.view addSubview:_popoverVC.view];
     [_popoverVC.view addSubview:dismissButton];
-    
-//
-//    [UIView animateWithDuration:0.4
-//                     animations:^{
-//                         //                         popover.view.center = self.view.center;
-//                         popover.view.alpha = 1.f;
-//                     }];
-    
 
     _popoverVC.view.frame = CGRectMake(0, 0, 300, 420);
     _popoverVC.view.center = CGPointMake(self.view.center.x, self.view.center.y - 500);
@@ -103,15 +94,7 @@
 }
 
 - (void)dismissPopover:(id)sender
-{
-//    UIView *popoverView = [(UIButton *)sender superview];
-//    [UIView animateWithDuration:0.4
-//                     animations:^{
-//                         popoverView.alpha = 0.f;
-//                     } completion:^(BOOL finished) {
-//                         [popoverView removeFromSuperview];
-//                     }];
-    
+{    
     [UIView animateWithDuration:0.8
                           delay:0.f
          usingSpringWithDamping:1.f
@@ -139,7 +122,7 @@
     
     UIImageView *snapShotView = [[UIImageView alloc] initWithFrame:view.frame];
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.05];
-    snapShotView.image = [snapshotImage applyBlurWithRadius:5 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+    snapShotView.image = [snapshotImage applyBlurWithRadius:8 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
     return snapShotView;
 }
 
