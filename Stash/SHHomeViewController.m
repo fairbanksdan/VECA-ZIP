@@ -7,6 +7,7 @@
 //
 
 #import "SHHomeViewController.h"
+#import "SHStash.h"
 
 @interface SHHomeViewController ()
 
@@ -39,7 +40,6 @@
 - (IBAction)browseButtonSelected:(id)sender
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:kBrowseButtonSelected object:nil];
-    
 }
 
 @end
