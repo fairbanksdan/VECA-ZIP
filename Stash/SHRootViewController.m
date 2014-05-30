@@ -51,6 +51,7 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(returnToHomeView) name:NSManagedObjectContextDidSaveNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addNewStash) name:kAddStashButtonSelected object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(trashStash) name:kTrashStashButtonSelected object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(moveToBrowseView) name:kBrowseButtonSelected object:nil];
 }
 
 -(void)setupInitialViewControllers
@@ -169,6 +170,11 @@
 - (void)returnToHomeView
 {
     [self.fgScrollView setContentOffset:CGPointMake(SH_HOME_VIEW_CONTROLLER, 0.0) animated:YES];
+}
+
+- (void)moveToBrowseView
+{
+    [self.fgScrollView setContentOffset:CGPointMake(SH_BROWSE_VIEW_CONTROLLER, 0.0) animated:YES];
 }
 
 - (void)addNewStash

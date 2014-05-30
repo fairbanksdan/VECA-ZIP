@@ -36,5 +36,10 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kAddStashButtonSelected object:nil];
     
 }
+- (IBAction)browseButtonSelected:(id)sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kBrowseButtonSelected object:nil];
+    
+}
 
 @end
