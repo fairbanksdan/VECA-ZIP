@@ -70,7 +70,7 @@
     [self.view addSubview:_popoverVC.view];
     [_popoverVC.view addSubview:dismissButton];
 
-    _popoverVC.view.frame = CGRectMake(0, 0, 300, 420);
+    _popoverVC.view.frame = CGRectMake(0, 0, 320, 568);
     _popoverVC.view.center = CGPointMake(self.view.center.x, self.view.center.y - 500);
     self.view.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.0];
     

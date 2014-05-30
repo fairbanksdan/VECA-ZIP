@@ -47,6 +47,7 @@
 		48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A4551B1933A8E6001B7173 /* iPhone568.storyboard */; };
 		48A4551F1933A9F0001B7173 /* SHStashAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A4551E1933A9F0001B7173 /* SHStashAPI.m */; };
 		48A8DE2D193650F90091A515 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		D62B845E1938ED7200BD744F /* SHTitleTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B845D1938ED7200BD744F /* SHTitleTipsViewController.m */; };
 		D6A2CDF51937EDC00034D397 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */; };
 		D6A2CDF91937EED90034D397 /* SHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF81937EED90034D397 /* SHCategory.m */; };
 		D6A2CDFE1937EF080034D397 /* SHCollectionPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */; };
@@ -161,6 +162,8 @@
 		48A4551D1933A9F0001B7173 /* SHStashAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHStashAPI.h; sourceTree = "<group>"; };
 		48A4551E1933A9F0001B7173 /* SHStashAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHStashAPI.m; sourceTree = "<group>"; };
 		48D15F711933BB280010B633 /* SHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConstants.h; sourceTree = "<group>"; };
+		D62B845C1938ED7200BD744F /* SHTitleTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTitleTipsViewController.h; sourceTree = "<group>"; };
+		D62B845D1938ED7200BD744F /* SHTitleTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTitleTipsViewController.m; sourceTree = "<group>"; };
 		D62B9FAC193551360009AB33 /* GlowAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlowAddButton.png; sourceTree = "<group>"; };
 		D62B9FAE1935513D0009AB33 /* Glowing_Browse_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Glowing_Browse_Button.png; sourceTree = "<group>"; };
 		D6A2CDF31937EDC00034D397 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
@@ -383,6 +386,24 @@
 			name = StashAPI;
 			sourceTree = "<group>";
 		};
+		D62B845F1938ED9D00BD744F /* Title Tips Popover */ = {
+			isa = PBXGroup;
+			children = (
+				D62B845C1938ED7200BD744F /* SHTitleTipsViewController.h */,
+				D62B845D1938ED7200BD744F /* SHTitleTipsViewController.m */,
+			);
+			name = "Title Tips Popover";
+			sourceTree = "<group>";
+		};
+		D62B84601938EDBF00BD744F /* Pitch Tips Popover */ = {
+			isa = PBXGroup;
+			children = (
+				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
+				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
+			);
+			name = "Pitch Tips Popover";
+			sourceTree = "<group>";
+		};
 		D6A2CDF61937EEC90034D397 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,10 +541,9 @@
 		D7CE7A9119380CCF003E4C15 /* Describe Idea */ = {
 			isa = PBXGroup;
 			children = (
-				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
-				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
 				D6FAFF171935287E000A312C /* SHAddPitchViewController.h */,
 				D6FAFF181935287E000A312C /* SHAddPitchViewController.m */,
+				D62B84601938EDBF00BD744F /* Pitch Tips Popover */,
 			);
 			name = "Describe Idea";
 			sourceTree = "<group>";
@@ -533,6 +553,7 @@
 			children = (
 				D6FAFF1C19352A62000A312C /* SHAddTitleViewController.h */,
 				D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */,
+				D62B845F1938ED9D00BD744F /* Title Tips Popover */,
 			);
 			name = "Name Idea";
 			sourceTree = "<group>";
@@ -679,6 +700,7 @@
 			files = (
 				D6FAFF191935287E000A312C /* SHAddPitchViewController.m in Sources */,
 				D6A2CDFE1937EF080034D397 /* SHCollectionPopoverViewController.m in Sources */,
+				D62B845E1938ED7200BD744F /* SHTitleTipsViewController.m in Sources */,
 				D6FAFF2119352AA3000A312C /* SHAddCategoryViewController.m in Sources */,
 				485CF30319368CB800E16756 /* MagicalRecord+Options.m in Sources */,
 				485CF30B19368CCF00E16756 /* MBStoreCheck.m in Sources */,

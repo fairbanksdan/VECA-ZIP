@@ -543,53 +543,71 @@
                         <viewControllerLayoutGuide type="bottom" id="89L-9h-Otn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sg6-Ew-w7p">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="420"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq2-WY-ks3">
-                                <rect key="frame" x="10" y="72" width="280" height="343"/>
+                                <rect key="frame" x="10" y="162" width="300" height="491"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Pretend you stepped into an elevator and an Angel investor walked in. You only had 45 seconds to pitch your idea to him/her. What would you say?</string>
+                                <string key="text">Pretend you stepped into an elevator and an Angel investor walked in. You only had 60 seconds to pitch your idea to him/her. What would you say?</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Pitch Tips" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWM-T2-ACM">
+                                <rect key="frame" x="40" y="121" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <size key="freeformSize" width="300" height="420"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sH-aa-Llc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="718" y="775"/>
         </scene>
-        <!--View Controller-->
+        <!--Title Tips View Controller-->
         <scene sceneID="JqE-WZ-cO5">
             <objects>
-                <viewController storyboardIdentifier="PopoverTitleVC" id="ocQ-1Q-r7A" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopoverTitleVC" id="ocQ-1Q-r7A" customClass="SHTitleTipsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B7S-z3-6Lx"/>
                         <viewControllerLayoutGuide type="bottom" id="e8Z-it-dHN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lah-6E-ulx">
-                        <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Awesome titles are created by using awesome words that people think are awesome." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgE-Lm-ZHu">
-                                <rect key="frame" x="5" y="5" width="250" height="290"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgE-Lm-ZHu">
+                                <rect key="frame" x="20" y="162" width="280" height="273"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">• Made up words make it easier to find a unique URL. 	• For some apps it is useful to use a descriptive title like "Cash Counter." 	• Or can try using a fruit as a title ;)</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Title Tips" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Am2-mK-3ls">
+                                <rect key="frame" x="40" y="121" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <size key="freeformSize" width="260" height="300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNd-ny-ZMM" userLabel="First Responder" sceneMemberID="firstResponder"/>

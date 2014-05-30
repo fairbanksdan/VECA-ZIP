@@ -124,7 +124,7 @@
     
     UIImageView *snapShotView = [[UIImageView alloc] initWithFrame:view.frame];
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.05];
-    snapShotView.image = [snapshotImage applyBlurWithRadius:5 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+    snapShotView.image = [snapshotImage applyBlurWithRadius:8 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
     return snapShotView;
 }
 

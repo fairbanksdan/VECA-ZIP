@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SHTitleTipsViewController.h"
 
-@interface SHAddTitleViewController : UIViewController
+@interface SHAddTitleViewController : UIViewController <SHTitleTipsViewControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *trashItButton;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *pitchTextView;
