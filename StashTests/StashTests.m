@@ -29,8 +29,18 @@
     [super tearDown];
 }
 
-- (void)testIfUserCanScroll
+- (void)testIfScrollViewIsNil
 {
     XCTAssertNotNil(_rootVC.bgScrollView, @"Background scrollview should not be nil");
+}
+
+- (void)testCanUserScroll
+{
+    NSArray *results = [SHStash findAllSortedBy:@"date" ascending:YES];
+    if (results.count) {
+        XCTAssertTrue(_rootVC.fgScrollView.userInteractionEnabled, @"View must allow user to scroll right or press browse button as long as at least 1 idea has been saved");
+    } else {
+        XCTAssertFalse(_rootVC.fgScrollView.userInteractionEnabled, @"View must allow user to scroll right or press browse button as long as at least 1 idea has been saved");
+    }
 }
 @end
