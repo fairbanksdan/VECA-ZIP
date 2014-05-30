@@ -29,7 +29,7 @@ typedef void(^SHStashCompletionHandler)(NSError *error);
 // Method for deleting stash from Core Data.
 + (void)deleteStash:(SHStash *)stash completion:(SHStashCompletionHandler)completionHandler;
 
-// Method for stash editing with new titlt and text.
+// Method for stash editing with new title and text.
 + (void)editStash:(SHStash *)stash title:(NSString *)title text:(NSString *)text category:(NSString *)category comletion:(SHStashCompletionHandler)completionHandler;
 
 @end

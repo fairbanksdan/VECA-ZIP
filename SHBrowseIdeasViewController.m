@@ -10,7 +10,6 @@
 #import "SHCollectionViewCell.h"
 
 @interface SHBrowseIdeasViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *ideas;
 -(void)fetchStashedIdeas;
 @end
@@ -63,9 +62,20 @@
 {
   SHCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
   SHStash *stash = self.ideas[indexPath.row];
+  
+  UIImage *icon = nil;
+  
+  NSString *path = [[NSBundle mainBundle]pathForResource:@"IconPList" ofType:@"plist"];
+  NSArray *categoryImageArray = [NSArray arrayWithContentsOfFile:path];
+  for (NSDictionary *categoryList in categoryImageArray) {
+    if ([[categoryList objectForKey:@"category"] isEqualToString:stash.category]) {
+      NSString *iconName = [categoryList objectForKey:@"imageName"];
+      icon = [UIImage imageNamed:iconName];
+    }
+  }
+  
   cell.ideaTitle.text = stash.title;
-  NSLog(@"%@",[stash description]);
-  cell.categoryImage.image = [UIImage imageNamed:@"biz-icon"];
+  cell.categoryImage.image = icon;
   
   return cell;
   

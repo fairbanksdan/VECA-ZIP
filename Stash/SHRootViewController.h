@@ -10,4 +10,6 @@
 
 @interface SHRootViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIScrollView *bgScrollView, *fgScrollView;
+
 @end
