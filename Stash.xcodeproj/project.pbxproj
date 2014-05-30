@@ -71,6 +71,46 @@
 		D788E74D1933A5AB002D59B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D788E74B1933A5AB002D59B5 /* InfoPlist.strings */; };
 		D788E74F1933A5AB002D59B5 /* StashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E74E1933A5AB002D59B5 /* StashTests.m */; };
 		D7CE7A9819380F15003E4C15 /* SHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CE7A9719380F15003E4C15 /* SHCollectionViewCell.m */; };
+		EF0927AF1938676800BDD95C /* SHStashAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A4551E1933A9F0001B7173 /* SHStashAPI.m */; };
+		EF0927B01938676800BDD95C /* SHStash.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE139A1933D56B006A9DB7 /* SHStash.m */; };
+		EF0927B11938676800BDD95C /* SHStash+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE139D1933D5F2006A9DB7 /* SHStash+Manage.m */; };
+		EF0927B21938676800BDD95C /* SHStashCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 4822BAA119379F90007BEE49 /* SHStashCloud.m */; };
+		EF0927B31938676800BDD95C /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */; };
+		EF0927B41938676800BDD95C /* SHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E7391933A5AB002D59B5 /* SHAppDelegate.m */; };
+		EF0927B51938676800BDD95C /* SHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF81937EED90034D397 /* SHCategory.m */; };
+		EF0927B61938676800BDD95C /* SHPitchTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */; };
+		EF0927B71938676800BDD95C /* SHAddPitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF181935287E000A312C /* SHAddPitchViewController.m */; };
+		EF0927B81938676800BDD95C /* SHAddTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */; };
+		EF0927B91938676800BDD95C /* SHAddCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */; };
+		EF0927BA1938676800BDD95C /* SHCollectionPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */; };
+		EF0927BB1938676800BDD95C /* SHCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */; };
+		EF0927BC1938676800BDD95C /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2B419368CB800E16756 /* MagicalImportFunctions.m */; };
+		EF0927BD1938676800BDD95C /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2B619368CB800E16756 /* NSAttributeDescription+MagicalDataImport.m */; };
+		EF0927BE1938676800BDD95C /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2B819368CB800E16756 /* NSEntityDescription+MagicalDataImport.m */; };
+		EF0927BF1938676800BDD95C /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2BA19368CB800E16756 /* NSNumber+MagicalDataImport.m */; };
+		EF0927C01938676800BDD95C /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2BC19368CB800E16756 /* NSObject+MagicalDataImport.m */; };
+		EF0927C11938676800BDD95C /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2BE19368CB800E16756 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		EF0927C21938676800BDD95C /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2C019368CB800E16756 /* NSString+MagicalDataImport.m */; };
+		EF0927C31938676800BDD95C /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2C319368CB800E16756 /* NSManagedObject+MagicalAggregation.m */; };
+		EF0927C41938676800BDD95C /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2C519368CB800E16756 /* NSManagedObject+MagicalDataImport.m */; };
+		EF0927C51938676800BDD95C /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2C719368CB800E16756 /* NSManagedObject+MagicalFinders.m */; };
+		EF0927C61938676800BDD95C /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2C919368CB800E16756 /* NSManagedObject+MagicalRecord.m */; };
+		EF0927C71938676800BDD95C /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2CB19368CB800E16756 /* NSManagedObject+MagicalRequests.m */; };
+		EF0927C81938676800BDD95C /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2CE19368CB800E16756 /* NSManagedObjectContext+MagicalObserving.m */; };
+		EF0927C91938676800BDD95C /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2D019368CB800E16756 /* NSManagedObjectContext+MagicalRecord.m */; };
+		EF0927CA1938676800BDD95C /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2D219368CB800E16756 /* NSManagedObjectContext+MagicalSaves.m */; };
+		EF0927CB1938676800BDD95C /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2D419368CB800E16756 /* NSManagedObjectContext+MagicalThreading.m */; };
+		EF0927CC1938676800BDD95C /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2D619368CB800E16756 /* NSManagedObjectModel+MagicalRecord.m */; };
+		EF0927CD1938676800BDD95C /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2D819368CB800E16756 /* NSPersistentStore+MagicalRecord.m */; };
+		EF0927CE1938676800BDD95C /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2DA19368CB800E16756 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		EF0927CF1938676800BDD95C /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2DD19368CB800E16756 /* MagicalRecord+Actions.m */; };
+		EF0927D01938676800BDD95C /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2DF19368CB800E16756 /* MagicalRecord+ErrorHandling.m */; };
+		EF0927D11938676800BDD95C /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E119368CB800E16756 /* MagicalRecord+iCloud.m */; };
+		EF0927D21938676800BDD95C /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E319368CB800E16756 /* MagicalRecord+Options.m */; };
+		EF0927D31938676800BDD95C /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E519368CB800E16756 /* MagicalRecord+Setup.m */; };
+		EF0927D41938676800BDD95C /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E719368CB800E16756 /* MagicalRecord+ShorthandSupport.m */; };
+		EF0927D51938676800BDD95C /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 485CF2E919368CB800E16756 /* MagicalRecord.m */; };
+		EF0927D61938676800BDD95C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E7351933A5AB002D59B5 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -731,6 +771,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0927AF1938676800BDD95C /* SHStashAPI.m in Sources */,
+				EF0927B01938676800BDD95C /* SHStash.m in Sources */,
+				EF0927B11938676800BDD95C /* SHStash+Manage.m in Sources */,
+				EF0927B21938676800BDD95C /* SHStashCloud.m in Sources */,
+				EF0927B31938676800BDD95C /* UIImage+ImageEffects.m in Sources */,
+				EF0927B41938676800BDD95C /* SHAppDelegate.m in Sources */,
+				EF0927B51938676800BDD95C /* SHCategory.m in Sources */,
+				EF0927B61938676800BDD95C /* SHPitchTipsViewController.m in Sources */,
+				EF0927B71938676800BDD95C /* SHAddPitchViewController.m in Sources */,
+				EF0927B81938676800BDD95C /* SHAddTitleViewController.m in Sources */,
+				EF0927B91938676800BDD95C /* SHAddCategoryViewController.m in Sources */,
+				EF0927BA1938676800BDD95C /* SHCollectionPopoverViewController.m in Sources */,
+				EF0927BB1938676800BDD95C /* SHCategoryCollectionViewCell.m in Sources */,
+				EF0927BC1938676800BDD95C /* MagicalImportFunctions.m in Sources */,
+				EF0927BD1938676800BDD95C /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				EF0927BE1938676800BDD95C /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				EF0927BF1938676800BDD95C /* NSNumber+MagicalDataImport.m in Sources */,
+				EF0927C01938676800BDD95C /* NSObject+MagicalDataImport.m in Sources */,
+				EF0927C11938676800BDD95C /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				EF0927C21938676800BDD95C /* NSString+MagicalDataImport.m in Sources */,
+				EF0927C31938676800BDD95C /* NSManagedObject+MagicalAggregation.m in Sources */,
+				EF0927C41938676800BDD95C /* NSManagedObject+MagicalDataImport.m in Sources */,
+				EF0927C51938676800BDD95C /* NSManagedObject+MagicalFinders.m in Sources */,
+				EF0927C61938676800BDD95C /* NSManagedObject+MagicalRecord.m in Sources */,
+				EF0927C71938676800BDD95C /* NSManagedObject+MagicalRequests.m in Sources */,
+				EF0927C81938676800BDD95C /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				EF0927C91938676800BDD95C /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				EF0927CA1938676800BDD95C /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				EF0927CB1938676800BDD95C /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				EF0927CC1938676800BDD95C /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				EF0927CD1938676800BDD95C /* NSPersistentStore+MagicalRecord.m in Sources */,
+				EF0927CE1938676800BDD95C /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				EF0927CF1938676800BDD95C /* MagicalRecord+Actions.m in Sources */,
+				EF0927D01938676800BDD95C /* MagicalRecord+ErrorHandling.m in Sources */,
+				EF0927D11938676800BDD95C /* MagicalRecord+iCloud.m in Sources */,
+				EF0927D21938676800BDD95C /* MagicalRecord+Options.m in Sources */,
+				EF0927D31938676800BDD95C /* MagicalRecord+Setup.m in Sources */,
+				EF0927D41938676800BDD95C /* MagicalRecord+ShorthandSupport.m in Sources */,
+				EF0927D51938676800BDD95C /* MagicalRecord.m in Sources */,
+				EF0927D61938676800BDD95C /* main.m in Sources */,
 				D788E74F1933A5AB002D59B5 /* StashTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

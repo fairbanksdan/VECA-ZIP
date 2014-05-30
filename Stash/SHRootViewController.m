@@ -17,7 +17,6 @@
 @interface SHRootViewController () <UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIStoryboard *storyBoard;
-@property (nonatomic, weak) IBOutlet UIScrollView *bgScrollView, *fgScrollView;
 @property (weak, nonatomic) IBOutlet UIView *editVCContainer;
 @property (nonatomic, strong) SHEditViewController *editViewController;
 @property (weak, nonatomic) IBOutlet UIView *browseVCContainer;
@@ -52,6 +51,8 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addNewStash) name:kAddStashButtonSelected object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(trashStash) name:kTrashStashButtonSelected object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(moveToBrowseView) name:kBrowseButtonSelected object:nil];
+    
+    _fgScrollView.userInteractionEnabled = [[SHStash findAllSortedBy:@"date" ascending:YES] count];
 }
 
 -(void)setupInitialViewControllers
@@ -92,6 +93,8 @@
     [self addChildViewController:self.addCategoryViewController];
     [self.addCategoryViewController didMoveToParentViewController:self];
 }
+
+
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

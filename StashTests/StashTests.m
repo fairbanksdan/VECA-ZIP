@@ -7,9 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SHRootViewController.h"
 
 @interface StashTests : XCTestCase
-
+@property (nonatomic, strong) SHRootViewController *rootVC;
+@property (nonatomic, strong) NSArray *stashes;
 @end
 
 @implementation StashTests
@@ -17,7 +19,11 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPhone568" bundle:nil];
+    self.rootVC = [storyboard instantiateViewControllerWithIdentifier:@"RootViewController"];
+    [self.rootVC performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
+    
+    _stashes = [SHStash findAllSortedBy:@"date" ascending:YES];
 }
 
 - (void)tearDown
@@ -26,9 +32,22 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testIfScrollViewIsNil
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertNotNil(_rootVC.bgScrollView, @"Background scrollview should not be nil");
 }
 
+- (void)testCanUserScroll
+{
+    if (_stashes.count) {
+        XCTAssertTrue(_rootVC.fgScrollView.userInteractionEnabled, @"View must allow user to scroll right or press browse button as long as at least 1 idea has been saved");
+    }
+}
+
+- (void)testUserCannotScroll
+{
+    if (!_stashes.count) {
+        XCTAssertFalse(_rootVC.fgScrollView.userInteractionEnabled, @"View must allow user to scroll right or press browse button as long as at least 1 idea has been saved");
+    }
+}
 @end
