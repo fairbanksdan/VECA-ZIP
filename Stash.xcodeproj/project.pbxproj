@@ -70,6 +70,7 @@
 		D788E7451933A5AB002D59B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D788E72D1933A5AB002D59B5 /* UIKit.framework */; };
 		D788E74D1933A5AB002D59B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D788E74B1933A5AB002D59B5 /* InfoPlist.strings */; };
 		D788E74F1933A5AB002D59B5 /* StashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D788E74E1933A5AB002D59B5 /* StashTests.m */; };
+		D7CE7A9819380F15003E4C15 /* SHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CE7A9719380F15003E4C15 /* SHCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +199,8 @@
 		D788E74A1933A5AB002D59B5 /* StashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StashTests-Info.plist"; sourceTree = "<group>"; };
 		D788E74C1933A5AB002D59B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D788E74E1933A5AB002D59B5 /* StashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StashTests.m; sourceTree = "<group>"; };
+		D7CE7A9619380F15003E4C15 /* SHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionViewCell.h; sourceTree = "<group>"; };
+		D7CE7A9719380F15003E4C15 /* SHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,23 +240,6 @@
 				4822BAA119379F90007BEE49 /* SHStashCloud.m */,
 			);
 			name = CoreData;
-			sourceTree = "<group>";
-		};
-		4822BAA31937A46A007BEE49 /* Add Stash View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				485CF2AD19367BD500E16756 /* SHHomeViewController.h */,
-				485CF2AE19367BD500E16756 /* SHHomeViewController.m */,
-				D6FAFF2C19354535000A312C /* SHRootViewController.h */,
-				D6FAFF2D19354535000A312C /* SHRootViewController.m */,
-				D6FAFF171935287E000A312C /* SHAddPitchViewController.h */,
-				D6FAFF181935287E000A312C /* SHAddPitchViewController.m */,
-				D6FAFF1C19352A62000A312C /* SHAddTitleViewController.h */,
-				D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */,
-				D6FAFF1F19352AA3000A312C /* SHAddCategoryViewController.h */,
-				D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */,
-			);
-			name = "Add Stash View Controllers";
 			sourceTree = "<group>";
 		};
 		485CF2B019368CB800E16756 /* MagicalRecord */ = {
@@ -400,13 +386,20 @@
 		D6A2CDF61937EEC90034D397 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				485E6635193409EB009985FB /* SHConstants */,
+				48A455201933A9F3001B7173 /* StashAPI */,
+				00EE13951933D45D006A9DB7 /* CoreData */,
+				D6A2CDF31937EDC00034D397 /* UIImage+ImageEffects.h */,
+				D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */,
+				D788E7381933A5AB002D59B5 /* SHAppDelegate.h */,
+				D788E7391933A5AB002D59B5 /* SHAppDelegate.m */,
 				D6A2CDF71937EED90034D397 /* SHCategory.h */,
 				D6A2CDF81937EED90034D397 /* SHCategory.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		D6A2CE021937F1120034D397 /* Popover View Controllers */ = {
+		D6A2CE021937F1120034D397 /* Select Category */ = {
 			isa = PBXGroup;
 			children = (
 				D6A2CDFA1937EF080034D397 /* SHCollectionPopoverViewController.h */,
@@ -414,30 +407,21 @@
 				D6A2CDFC1937EF080034D397 /* SHCategoryCollectionViewCell.h */,
 				D6A2CDFD1937EF080034D397 /* SHCategoryCollectionViewCell.m */,
 			);
-			name = "Popover View Controllers";
+			name = "Select Category";
 			sourceTree = "<group>";
 		};
 		D6FAFF1A1935288D000A312C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4822BAA31937A46A007BEE49 /* Add Stash View Controllers */,
-				D6A2CE021937F1120034D397 /* Popover View Controllers */,
-				480C245B1935240900678499 /* SHEditViewController.h */,
-				480C245C1935240900678499 /* SHEditViewController.m */,
-				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
-				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
-				00E62AF719378BF9006AA5A8 /* SHBrowseIdeasViewController.h */,
-				00E62AF819378BF9006AA5A8 /* SHBrowseIdeasViewController.m */,
+				D7CE7A9519380DF7003E4C15 /* Browse Idea */,
+				D7CE7A9419380D93003E4C15 /* Expand Idea */,
+				D7CE7A9019380CC3003E4C15 /* Root */,
+				D7CE7A8F19380CBA003E4C15 /* Home */,
+				D7CE7A9119380CCF003E4C15 /* Describe Idea */,
+				D7CE7A9219380CE7003E4C15 /* Name Idea */,
+				D7CE7A9319380D53003E4C15 /* Stash Idea */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		D6FAFF1B193528A2000A312C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				48A4551B1933A8E6001B7173 /* iPhone568.storyboard */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		D788E71D1933A5AB002D59B5 = {
@@ -473,17 +457,10 @@
 		D788E72F1933A5AB002D59B5 /* Stash */ = {
 			isa = PBXGroup;
 			children = (
-				D6A2CDF61937EEC90034D397 /* Model */,
-				D6A2CDF31937EDC00034D397 /* UIImage+ImageEffects.h */,
-				D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */,
-				D788E7381933A5AB002D59B5 /* SHAppDelegate.h */,
-				D788E7391933A5AB002D59B5 /* SHAppDelegate.m */,
-				485E6635193409EB009985FB /* SHConstants */,
-				00EE13951933D45D006A9DB7 /* CoreData */,
-				D6FAFF1B193528A2000A312C /* View */,
-				D6FAFF1A1935288D000A312C /* Controller */,
-				48A455201933A9F3001B7173 /* StashAPI */,
+				48A4551B1933A8E6001B7173 /* iPhone568.storyboard */,
 				D788E73B1933A5AB002D59B5 /* Images.xcassets */,
+				D6A2CDF61937EEC90034D397 /* Model */,
+				D6FAFF1A1935288D000A312C /* Controller */,
 				D788E7301933A5AB002D59B5 /* Supporting Files */,
 			);
 			path = Stash;
@@ -520,6 +497,74 @@
 				D788E74B1933A5AB002D59B5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7CE7A8F19380CBA003E4C15 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				485CF2AD19367BD500E16756 /* SHHomeViewController.h */,
+				485CF2AE19367BD500E16756 /* SHHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		D7CE7A9019380CC3003E4C15 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D6FAFF2C19354535000A312C /* SHRootViewController.h */,
+				D6FAFF2D19354535000A312C /* SHRootViewController.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		D7CE7A9119380CCF003E4C15 /* Describe Idea */ = {
+			isa = PBXGroup;
+			children = (
+				D6FAFF2719352F1E000A312C /* SHPitchTipsViewController.h */,
+				D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */,
+				D6FAFF171935287E000A312C /* SHAddPitchViewController.h */,
+				D6FAFF181935287E000A312C /* SHAddPitchViewController.m */,
+			);
+			name = "Describe Idea";
+			sourceTree = "<group>";
+		};
+		D7CE7A9219380CE7003E4C15 /* Name Idea */ = {
+			isa = PBXGroup;
+			children = (
+				D6FAFF1C19352A62000A312C /* SHAddTitleViewController.h */,
+				D6FAFF1D19352A62000A312C /* SHAddTitleViewController.m */,
+			);
+			name = "Name Idea";
+			sourceTree = "<group>";
+		};
+		D7CE7A9319380D53003E4C15 /* Stash Idea */ = {
+			isa = PBXGroup;
+			children = (
+				D6A2CE021937F1120034D397 /* Select Category */,
+				D6FAFF1F19352AA3000A312C /* SHAddCategoryViewController.h */,
+				D6FAFF2019352AA3000A312C /* SHAddCategoryViewController.m */,
+			);
+			name = "Stash Idea";
+			sourceTree = "<group>";
+		};
+		D7CE7A9419380D93003E4C15 /* Expand Idea */ = {
+			isa = PBXGroup;
+			children = (
+				480C245C1935240900678499 /* SHEditViewController.m */,
+				480C245B1935240900678499 /* SHEditViewController.h */,
+			);
+			name = "Expand Idea";
+			sourceTree = "<group>";
+		};
+		D7CE7A9519380DF7003E4C15 /* Browse Idea */ = {
+			isa = PBXGroup;
+			children = (
+				00E62AF719378BF9006AA5A8 /* SHBrowseIdeasViewController.h */,
+				00E62AF819378BF9006AA5A8 /* SHBrowseIdeasViewController.m */,
+				D7CE7A9619380F15003E4C15 /* SHCollectionViewCell.h */,
+				D7CE7A9719380F15003E4C15 /* SHCollectionViewCell.m */,
+			);
+			name = "Browse Idea";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,6 +715,7 @@
 				485CF2F919368CB800E16756 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				485CF30219368CB800E16756 /* MagicalRecord+iCloud.m in Sources */,
 				D788E73A1933A5AB002D59B5 /* SHAppDelegate.m in Sources */,
+				D7CE7A9819380F15003E4C15 /* SHCollectionViewCell.m in Sources */,
 				485CF2F419368CB800E16756 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				D6A2CDFF1937EF080034D397 /* SHCategoryCollectionViewCell.m in Sources */,
 				485CF2ED19368CB800E16756 /* MagicalImportFunctions.m in Sources */,
