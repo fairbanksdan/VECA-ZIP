@@ -15,6 +15,7 @@ static NSString * const kStashObjectId = @"objectId";
 static NSString * const kStashObjectUUID = @"uuid";
 
 static NSString * const kAddStashButtonSelected = @"AddStashButtonSelected";
+static NSString * const kBrowseButtonSelected = @"BrowseButtonSelected";
 static NSString * const kTrashStashButtonSelected = @"TrashStashButtonSelected";
 
 static NSString * const kApplicationID = @"1Dn8UFej0pHivPQNQ4qooKFuFYCZ3lQXrp4cXSiH";
