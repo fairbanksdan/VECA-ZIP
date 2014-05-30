@@ -11,6 +11,7 @@
 @interface SHPitchTipsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *PitchTipsLabel;
 
+
 @end
 
 @implementation SHPitchTipsViewController
