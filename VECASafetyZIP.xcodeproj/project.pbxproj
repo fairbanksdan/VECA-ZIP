@@ -228,20 +228,20 @@
 		D6FAFF2819352F1E000A312C /* SHPitchTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPitchTipsViewController.m; sourceTree = "<group>"; };
 		D6FAFF2C19354535000A312C /* SHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRootViewController.h; sourceTree = "<group>"; };
 		D6FAFF2D19354535000A312C /* SHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRootViewController.m; sourceTree = "<group>"; };
-		D788E7261933A5AB002D59B5 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788E7261933A5AB002D59B5 /* VECA Safety ZIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VECA Safety ZIP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D788E7291933A5AB002D59B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D788E72B1933A5AB002D59B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D788E72D1933A5AB002D59B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D788E7311933A5AB002D59B5 /* Stash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stash-Info.plist"; sourceTree = "<group>"; };
+		D788E7311933A5AB002D59B5 /* VECASafetyZIP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VECASafetyZIP-Info.plist"; sourceTree = "<group>"; };
 		D788E7331933A5AB002D59B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D788E7351933A5AB002D59B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D788E7371933A5AB002D59B5 /* Stash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stash-Prefix.pch"; sourceTree = "<group>"; };
+		D788E7371933A5AB002D59B5 /* VECASafetyZIP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VECASafetyZIP-Prefix.pch"; sourceTree = "<group>"; };
 		D788E7381933A5AB002D59B5 /* SHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHAppDelegate.h; sourceTree = "<group>"; };
 		D788E7391933A5AB002D59B5 /* SHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHAppDelegate.m; sourceTree = "<group>"; };
 		D788E73B1933A5AB002D59B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D788E7411933A5AB002D59B5 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788E7411933A5AB002D59B5 /* VECASafetyZIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VECASafetyZIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D788E7421933A5AB002D59B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D788E74A1933A5AB002D59B5 /* StashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StashTests-Info.plist"; sourceTree = "<group>"; };
+		D788E74A1933A5AB002D59B5 /* VECASafetyZIPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VECASafetyZIPTests-Info.plist"; sourceTree = "<group>"; };
 		D788E74C1933A5AB002D59B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D788E74E1933A5AB002D59B5 /* StashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StashTests.m; sourceTree = "<group>"; };
 		D7CE7A9619380F15003E4C15 /* SHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionViewCell.h; sourceTree = "<group>"; };
@@ -491,7 +491,7 @@
 		D788E71D1933A5AB002D59B5 = {
 			isa = PBXGroup;
 			children = (
-				D788E72F1933A5AB002D59B5 /* Stash */,
+				D788E72F1933A5AB002D59B5 /* VECA Safety ZIP */,
 				D788E7481933A5AB002D59B5 /* StashTests */,
 				D788E7281933A5AB002D59B5 /* Frameworks */,
 				D788E7271933A5AB002D59B5 /* Products */,
@@ -501,8 +501,8 @@
 		D788E7271933A5AB002D59B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D788E7261933A5AB002D59B5 /* Stash.app */,
-				D788E7411933A5AB002D59B5 /* StashTests.xctest */,
+				D788E7261933A5AB002D59B5 /* VECA Safety ZIP.app */,
+				D788E7411933A5AB002D59B5 /* VECASafetyZIPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -518,7 +518,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D788E72F1933A5AB002D59B5 /* Stash */ = {
+		D788E72F1933A5AB002D59B5 /* VECA Safety ZIP */ = {
 			isa = PBXGroup;
 			children = (
 				48A4551B1933A8E6001B7173 /* iPhone568.storyboard */,
@@ -527,6 +527,7 @@
 				D6FAFF1A1935288D000A312C /* Controller */,
 				D788E7301933A5AB002D59B5 /* Supporting Files */,
 			);
+			name = "VECA Safety ZIP";
 			path = Stash;
 			sourceTree = "<group>";
 		};
@@ -537,10 +538,10 @@
 				485CF30819368CCF00E16756 /* MBStoreCheck */,
 				485CF2B019368CB800E16756 /* MagicalRecord */,
 				485CF30719368CC100E16756 /* Images */,
-				D788E7311933A5AB002D59B5 /* Stash-Info.plist */,
+				D788E7311933A5AB002D59B5 /* VECASafetyZIP-Info.plist */,
 				D788E7321933A5AB002D59B5 /* InfoPlist.strings */,
 				D788E7351933A5AB002D59B5 /* main.m */,
-				D788E7371933A5AB002D59B5 /* Stash-Prefix.pch */,
+				D788E7371933A5AB002D59B5 /* VECASafetyZIP-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -557,7 +558,7 @@
 		D788E7491933A5AB002D59B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D788E74A1933A5AB002D59B5 /* StashTests-Info.plist */,
+				D788E74A1933A5AB002D59B5 /* VECASafetyZIPTests-Info.plist */,
 				D788E74B1933A5AB002D59B5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -634,9 +635,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D788E7251933A5AB002D59B5 /* Stash */ = {
+		D788E7251933A5AB002D59B5 /* VECA Safety ZIP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D788E7521933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "Stash" */;
+			buildConfigurationList = D788E7521933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "VECA Safety ZIP" */;
 			buildPhases = (
 				D788E7221933A5AB002D59B5 /* Sources */,
 				D788E7231933A5AB002D59B5 /* Frameworks */,
@@ -646,14 +647,14 @@
 			);
 			dependencies = (
 			);
-			name = Stash;
+			name = "VECA Safety ZIP";
 			productName = Stash;
-			productReference = D788E7261933A5AB002D59B5 /* Stash.app */;
+			productReference = D788E7261933A5AB002D59B5 /* VECA Safety ZIP.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D788E7401933A5AB002D59B5 /* StashTests */ = {
+		D788E7401933A5AB002D59B5 /* VECASafetyZIPTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "StashTests" */;
+			buildConfigurationList = D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "VECASafetyZIPTests" */;
 			buildPhases = (
 				D788E73D1933A5AB002D59B5 /* Sources */,
 				D788E73E1933A5AB002D59B5 /* Frameworks */,
@@ -664,9 +665,9 @@
 			dependencies = (
 				D788E7471933A5AB002D59B5 /* PBXTargetDependency */,
 			);
-			name = StashTests;
+			name = VECASafetyZIPTests;
 			productName = StashTests;
-			productReference = D788E7411933A5AB002D59B5 /* StashTests.xctest */;
+			productReference = D788E7411933A5AB002D59B5 /* VECASafetyZIPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -692,7 +693,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D788E7211933A5AB002D59B5 /* Build configuration list for PBXProject "Stash" */;
+			buildConfigurationList = D788E7211933A5AB002D59B5 /* Build configuration list for PBXProject "VECASafetyZIP" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -704,8 +705,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D788E7251933A5AB002D59B5 /* Stash */,
-				D788E7401933A5AB002D59B5 /* StashTests */,
+				D788E7251933A5AB002D59B5 /* VECA Safety ZIP */,
+				D788E7401933A5AB002D59B5 /* VECASafetyZIPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -846,7 +847,7 @@
 /* Begin PBXTargetDependency section */
 		D788E7471933A5AB002D59B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D788E7251933A5AB002D59B5 /* Stash */;
+			target = D788E7251933A5AB002D59B5 /* VECA Safety ZIP */;
 			targetProxy = D788E7461933A5AB002D59B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -903,7 +904,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -935,7 +936,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -949,8 +950,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
-				INFOPLIST_FILE = "Stash/Stash-Info.plist";
+				GCC_PREFIX_HEADER = "Stash/VECASafetyZIP-Prefix.pch";
+				INFOPLIST_FILE = "Stash/VECASafetyZIP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -966,8 +967,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
-				INFOPLIST_FILE = "Stash/Stash-Info.plist";
+				GCC_PREFIX_HEADER = "Stash/VECASafetyZIP-Prefix.pch";
+				INFOPLIST_FILE = "Stash/VECASafetyZIP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -990,8 +991,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "StashTests/StashTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "StashTests/VECASafetyZIPTests-Info.plist";
+				PRODUCT_NAME = VECASafetyZIPTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1008,8 +1009,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
-				INFOPLIST_FILE = "StashTests/StashTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "StashTests/VECASafetyZIPTests-Info.plist";
+				PRODUCT_NAME = VECASafetyZIPTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1018,7 +1019,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D788E7211933A5AB002D59B5 /* Build configuration list for PBXProject "Stash" */ = {
+		D788E7211933A5AB002D59B5 /* Build configuration list for PBXProject "VECASafetyZIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D788E7501933A5AB002D59B5 /* Debug */,
@@ -1027,7 +1028,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D788E7521933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "Stash" */ = {
+		D788E7521933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "VECA Safety ZIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D788E7531933A5AB002D59B5 /* Debug */,
@@ -1036,7 +1037,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "StashTests" */ = {
+		D788E7551933A5AB002D59B5 /* Build configuration list for PBXNativeTarget "VECASafetyZIPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D788E7561933A5AB002D59B5 /* Debug */,

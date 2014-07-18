@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3A25BF5E-4104-4248-8BB9-4E9C1E69FC5F</string>
+	<string>83C7F092-ED90-4F55-805E-F1D8460A1CF5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Stash</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3E70DB99-2E57-4E81-B87F-B98A3E5845FF</key>
+		<key>6CA84FCE-E34D-435B-A23B-3EE6CD98FCAF</key>
 		<string>ssh://github.com/fairbanksdan/Stash.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Stash.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3E70DB99-2E57-4E81-B87F-B98A3E5845FF</key>
+		<key>6CA84FCE-E34D-435B-A23B-3EE6CD98FCAF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3E70DB99-2E57-4E81-B87F-B98A3E5845FF</string>
+	<string>6CA84FCE-E34D-435B-A23B-3EE6CD98FCAF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3E70DB99-2E57-4E81-B87F-B98A3E5845FF</string>
+			<string>6CA84FCE-E34D-435B-A23B-3EE6CD98FCAF</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Stash</string>
+			<string>VECA Safety ZIP</string>
 		</dict>
 	</array>
 </dict>
