@@ -9,7 +9,7 @@
 #import "SHAddPitchViewController.h"
 #import "UIImage+ImageEffects.h"
 
-@interface SHAddPitchViewController () <UITextFieldDelegate>
+@interface SHAddPitchViewController () <UITextFieldDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) SHPitchTipsViewController *popoverVC;
 @property (nonatomic, strong) UIImageView *snapShotView;
@@ -32,6 +32,27 @@
     
     _pitchTextView.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:1];
     _pitchTextView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.2];
+    
+    if ([_projectNameTextField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor lightGrayColor];
+        _projectNameTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Project Name" attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    
+    if ([_taskLocationTextField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor lightGrayColor];
+        _taskLocationTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Specific Task Location" attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    
+    if ([_primaryEvacuationTextField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor lightGrayColor];
+        _primaryEvacuationTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Primary Evacuation" attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    
+    if ([_secondaryEvacuationTextField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor lightGrayColor];
+        _secondaryEvacuationTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Secondary Evacuation" attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    
 
     
 }
@@ -52,6 +73,23 @@
 - (void)didSaveToCoreData
 {
     self.pitchTextView.text = nil;
+}
+
+- (IBAction)ProjectNameTextField:(id)sender {
+    if ([_projectNameTextField becomeFirstResponder]) {
+        _projectNameTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@""];
+        NSLog(@"Did it");
+    }
+}
+
+- (IBAction)datePicker:(id)sender {
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MMMM dd, yyyy"];
+    NSDate *date = _datePicker.date;
+    NSString *dateSetString = [dateFormat stringFromDate:date];
+    
+    _dateLabel.text = dateSetString;
 }
 
 - (IBAction)trashStashButtonSelected:(id)sender
@@ -114,6 +152,7 @@
                      }];
 }
 
+//Takes a snapshot of the View and adds a smoked glass window effect. Changing the "applyBlurWithRadius will change the how much the image is blured. 
 + (UIImageView *)snapshotForView:(UIView *)view
 {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0f);
@@ -126,6 +165,13 @@
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.05];
     snapShotView.image = [snapshotImage applyBlurWithRadius:8 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
     return snapShotView;
+}
+- (IBAction)tapGesture:(id)sender {
+    [_projectNameTextField resignFirstResponder];
+    [_taskLocationTextField resignFirstResponder];
+    [_primaryEvacuationTextField resignFirstResponder];
+    [_secondaryEvacuationTextField resignFirstResponder];
+    
 }
 
 @end

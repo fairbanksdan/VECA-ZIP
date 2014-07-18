@@ -48,6 +48,7 @@
 		48A4551F1933A9F0001B7173 /* SHStashAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A4551E1933A9F0001B7173 /* SHStashAPI.m */; };
 		48A8DE2D193650F90091A515 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		D62B845E1938ED7200BD744F /* SHTitleTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B845D1938ED7200BD744F /* SHTitleTipsViewController.m */; };
+		D689E39E1979A10E003050F5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D689E39D1979A10E003050F5 /* logo.png */; };
 		D6A2CDF51937EDC00034D397 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */; };
 		D6A2CDF91937EED90034D397 /* SHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDF81937EED90034D397 /* SHCategory.m */; };
 		D6A2CDFE1937EF080034D397 /* SHCollectionPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A2CDFB1937EF080034D397 /* SHCollectionPopoverViewController.m */; };
@@ -206,6 +207,7 @@
 		D62B845D1938ED7200BD744F /* SHTitleTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTitleTipsViewController.m; sourceTree = "<group>"; };
 		D62B9FAC193551360009AB33 /* GlowAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlowAddButton.png; sourceTree = "<group>"; };
 		D62B9FAE1935513D0009AB33 /* Glowing_Browse_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Glowing_Browse_Button.png; sourceTree = "<group>"; };
+		D689E39D1979A10E003050F5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		D6A2CDF31937EDC00034D397 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		D6A2CDF41937EDC00034D397 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		D6A2CDF71937EED90034D397 /* SHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCategory.h; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				D6FAFF15193526EE000A312C /* QuestionMarkCircle.png */,
 				D62B9FAC193551360009AB33 /* GlowAddButton.png */,
 				D62B9FAE1935513D0009AB33 /* Glowing_Browse_Button.png */,
+				D689E39D1979A10E003050F5 /* logo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 			files = (
 				0041AE1319379010001491D5 /* Update_Add_Button.png in Resources */,
 				48A4551C1933A8E6001B7173 /* iPhone568.storyboard in Resources */,
+				D689E39E1979A10E003050F5 /* logo.png in Resources */,
 				0041AE151937901B001491D5 /* Update_Browse_Button.png in Resources */,
 				D788E7341933A5AB002D59B5 /* InfoPlist.strings in Resources */,
 				0041AE1119379007001491D5 /* Stash_Logo_And_Tagline.png in Resources */,

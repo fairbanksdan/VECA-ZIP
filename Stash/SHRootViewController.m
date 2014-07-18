@@ -143,14 +143,14 @@
             [self.homeViewController viewDidDisappear:YES];
             [self.addPitchViewController viewDidAppear:YES];
             [self.addTitleViewController viewDidDisappear:YES];
-            [self.addPitchViewController.pitchTextView becomeFirstResponder];
+//            [self.addPitchViewController.pitchTextView becomeFirstResponder];
             break;
             
         case SH_ADD_TITLE_VIEW_CONTROLLER:
             [self.addPitchViewController viewDidDisappear:YES];
             [self.addTitleViewController viewDidAppear:YES];
             [self.addCategoryViewController viewDidDisappear:YES];
-            [self.addTitleViewController.titleTextField becomeFirstResponder];
+//            [self.addTitleViewController.titleTextField becomeFirstResponder];
             break;
             
         case SH_ADD_CATEGORY_VIEW_CONTROLLER:
